@@ -1,0 +1,30 @@
+_target_: verl.workers.config.McoreEngineConfig
+param_offload: false
+grad_offload: false
+optimizer_offload: false
+tensor_model_parallel_size: 1
+expert_model_parallel_size: 1
+expert_tensor_parallel_size: null
+pipeline_model_parallel_size: 1
+virtual_pipeline_model_parallel_size: null
+context_parallel_size: 1
+sequence_parallel: true
+use_distributed_optimizer: true
+use_dist_checkpointing: false
+dist_checkpointing_path: null
+dist_checkpointing_prefix: ''
+seed: 42
+override_ddp_config: {}
+override_transformer_config:
+  recompute_granularity: null
+  recompute_modules:
+  - core_attn
+  recompute_method: null
+  recompute_num_layers: null
+  attention_backend: flash
+override_mcore_model_config: {}
+use_mbridge: true
+vanilla_mbridge: true
+use_remove_padding: true
+forward_only: false
+dtype: bfloat16

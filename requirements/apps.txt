@@ -1,0 +1,6 @@
+# Separate Python 3.10 environment for the original APPS RuntimeModule dependency.
+numpy==1.24.4
+pyext==0.7
+pyyaml==6.0.2
+psutil==7.0.0
+multipledispatch==1.0.0

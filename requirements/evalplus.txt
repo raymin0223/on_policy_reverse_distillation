@@ -1,0 +1,4 @@
+evalplus @ git+https://github.com/evalplus/evalplus.git@6eb1e199c2e370518e7bf3e8eee6322c2b23c89c
+numpy==1.26.4
+transformers==4.57.6
+psutil==7.2.2

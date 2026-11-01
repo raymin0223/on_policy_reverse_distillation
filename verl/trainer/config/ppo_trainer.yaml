@@ -1,0 +1,120 @@
+defaults:
+- actor@actor_rollout_ref.actor: dp_actor
+- data@data: legacy_data
+- reward_manager@reward_manager
+- ref@actor_rollout_ref.ref: dp_ref
+- rollout@actor_rollout_ref.rollout: rollout
+- model@actor_rollout_ref.model: hf_model
+- critic@critic: dp_critic
+- reward_model@reward_model: dp_reward_loop
+- algorithm@algorithm.rollout_correction: rollout_correction
+- _self_
+seed: null
+actor_rollout_ref:
+  hybrid_engine: true
+  nccl_timeout: 600
+  rollout:
+    layered_summon: false
+custom_reward_function:
+  path: null
+  name: compute_score
+algorithm:
+  _target_: verl.trainer.config.AlgoConfig
+  gamma: 1.0
+  lam: 1.0
+  adv_estimator: gae
+  norm_adv_by_std_in_grpo: false
+  use_kl_in_reward: false
+  kl_penalty: kl
+  kl_ctrl:
+    _target_: verl.trainer.config.KLControlConfig
+    type: fixed
+    kl_coef: 0.001
+    horizon: 10000
+    target_kl: 0.1
+  use_pf_ppo: false
+  pf_ppo:
+    reweight_method: pow
+    weight_pow: 2.0
+trainer:
+  balance_batch: true
+  total_epochs: 30
+  total_training_steps: null
+  project_name: ${oc.env:WANDB_PROJECT,on-policy-reverse-distillation}
+  wandb_mode: ${oc.env:WANDB_MODE,offline}
+  wandb_entity: null
+  experiment_name: oprd
+  logger:
+  - console
+  - wandb
+  log_val_generations: 1
+  log_val_generation_uid_count: 4
+  log_val_generation_wrong_only: false
+  log_val_generation_success_threshold: 1.0
+  rollout_data_dir: null
+  validation_data_dir: null
+  nnodes: 1
+  n_gpus_per_node: 8
+  save_freq: 25
+  save_steps: []
+  save_on_validation: false
+  keep_only_latest_resume_state: false
+  validation_steps: []
+  save_best_validation_checkpoint: true
+  best_validation_metric: acc/mean@16
+  best_validation_metric_mode: max
+  best_validation_metric_min_delta: 0.0
+  best_validation_checkpoint_min_step: 0
+  best_validation_checkpoint_metadata_filename: best_validation_checkpoint.json
+  esi_redundant_time: 0
+  resume_mode: auto
+  resume_from_path: null
+  val_before_train: true
+  val_reward_num_examine: 1
+  async_validation_reward: true
+  async_validation_max_pending: 1
+  val_only: false
+  test_freq: 10
+  hourly_validation_freq_minutes: 0
+  critic_warmup: 0
+  default_hdfs_dir: null
+  del_local_ckpt_after_load: false
+  default_local_dir: checkpoints/${trainer.project_name}/${trainer.experiment_name}
+  max_actor_ckpt_to_keep: 1
+  max_critic_ckpt_to_keep: 1
+  ray_wait_register_center_timeout: 300
+  device: cuda
+  use_legacy_worker_impl: auto
+global_profiler:
+  _target_: verl.utils.profiler.ProfilerConfig
+  tool: null
+  steps: null
+  profile_continuous_steps: false
+  save_path: outputs/profile
+  global_tool_config:
+    nsys:
+      _target_: verl.utils.profiler.config.NsightToolConfig
+      discrete: false
+      controller_nsight_options:
+        trace: cuda,nvtx,cublas,ucx
+        cuda-memory-usage: 'true'
+        cuda-graph-trace: graph
+      worker_nsight_options:
+        trace: cuda,nvtx,cublas,ucx
+        cuda-memory-usage: 'true'
+        cuda-graph-trace: graph
+        capture-range: cudaProfilerApi
+        capture-range-end: null
+        kill: none
+    torch_memory:
+      trace_alloc_max_entries: 100000
+      stack_depth: 32
+      context: all
+      stacks: all
+      kw_args: {}
+transfer_queue:
+  enable: false
+ray_kwargs:
+  ray_init:
+    num_cpus: null
+  timeline_json_file: null

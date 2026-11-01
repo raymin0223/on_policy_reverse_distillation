@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "verification": "Pinned source contents and ordered prepared prompts/answers were compared with the original experiment files. Prepared input digests use JSON UTF-8, sorted keys, compact separators, and ensure_ascii=false.",
+  "datasets": {
+    "dapo": {
+      "repo": "open-r1/DAPO-Math-17k-Processed",
+      "revision": "31dd309567e3da778038cc87d868b6097a3ccf68",
+      "filename": "en/train-00000-of-00001.parquet",
+      "split": "train",
+      "sha256": "40f672fe8b6dbeee953ae5acc75a38e99144e682450e07c625c87c734ec76285",
+      "rows": 14116,
+      "prepared_inputs_sha256": "0fc92a0e92a8d5a00dc2d07cf9b0ebd9dba548da518379b8f02476f55f3c6294"
+    },
+    "aime24": {
+      "repo": "math-ai/aime24",
+      "revision": "83a7f387baaa524a8bda0022eac0541582297103",
+      "filename": "test-00000-of-00001.parquet",
+      "split": "test",
+      "sha256": "2602156eb2a0ab64393dc46617a3bfee3451ae3c985a7ea6ac2b55436e094a38",
+      "rows": 30,
+      "prepared_inputs_sha256": "c59d36edd2e36aa4540825bbf61090b11b6b49041d25d7e14aef35d5932200e4"
+    },
+    "aime25": {
+      "repo": "math-ai/aime25",
+      "revision": "563bb8404243c5f09de6ec262f2db674fe5bce9b",
+      "filename": "test.jsonl",
+      "split": "test",
+      "sha256": "b4e273c02d3e7fe1b74b59eae768fc8230bfb0f79539890cb56f4361caac0331",
+      "rows": 30,
+      "prepared_inputs_sha256": "e768cbdd3a69f058f7eb0137e25e633fb721e7217e9feb149c4a9c2a2707f82a"
+    },
+    "hmmt25": {
+      "repo": "MathArena/hmmt_feb_2025",
+      "revision": "6fdc4277120810ff75aa22d2d5489b91f7a262a1",
+      "filename": "data/train-00000-of-00001.parquet",
+      "split": "train",
+      "sha256": "ccca64d248b89dc0765e40b893fe4ebeab242226a4336027d95d256886a3d5f2",
+      "rows": 30,
+      "prepared_inputs_sha256": "74cf42ad7ee5974af2588821894e1a17427892c26c980519b10ea204c42f5ad6"
+    }
+  }
+}

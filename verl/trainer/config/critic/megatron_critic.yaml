@@ -1,0 +1,16 @@
+defaults:
+- ../optim@optim: megatron
+- ../engine@megatron: megatron
+- critic
+- _self_
+_target_: verl.workers.config.McoreCriticConfig
+strategy: megatron
+nccl_timeout: 600
+model:
+  _target_: verl.trainer.config.BaseModelConfig
+  override_config:
+    model_config: {}
+    moe_config:
+      freeze_moe_router: false
+load_weight: true
+data_loader_seed: ${oc.select:actor_rollout_ref.actor.data_loader_seed,null}

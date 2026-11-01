@@ -1,0 +1,162 @@
+_target_: verl.workers.config.ActorConfig
+rollout_n: ${oc.select:actor_rollout_ref.rollout.n,1}
+strategy: ???
+ppo_mini_batch_size: 8
+ppo_micro_batch_size: null
+ppo_micro_batch_size_per_gpu: null
+use_dynamic_bsz: false
+ppo_max_token_len_per_gpu: 16384
+clip_ratio: 0.2
+clip_ratio_low: 0.2
+clip_ratio_high: 0.2
+tau_pos: 1.0
+tau_neg: 1.05
+freeze_vision_tower: false
+policy_loss:
+  _target_: verl.workers.config.PolicyLossConfig
+  loss_mode: vanilla
+distillation:
+  _target_: verl.workers.config.SelfDistillationConfig
+  full_logit_distillation: true
+  distillation_topk: 100
+  distillation_topk_source: student
+  oprd_enabled: false
+  oprd_lambda: 0.5
+  oprd_signed_lambda_schedule_enabled: true
+  oprd_lambda_plus_start: 1.0
+  oprd_lambda_plus_end: 1.0
+  oprd_lambda_minus_start: 0.0
+  oprd_lambda_minus_end: 1.0
+  oprd_signed_lambda_schedule_steps: 50
+  oprd_topk: 64
+  oprd_base_model_path: null
+  oprd_h1_source: teacher_base
+  oprd_opsd_hint_source: student
+  oprd_opsd_weak_teacher_num_rollouts: 8
+  oprd_skip_invalid_format: true
+  oprd_invalid_format_key: incorrect_format
+  oprd_invalid_format_threshold: 0.5
+  distillation_add_tail: true
+  alpha: 0.5
+  kdrl_enabled: false
+  kdrl_beta_init: 0.005
+  kdrl_delta: 0.0001
+  kdrl_beta_min: 0.0
+  delta_target_enabled: false
+  delta_target_scale: 1.0
+  delta_teacher_base_model_path: null
+  direct_opd_mode: topk
+  direct_opd_top_k: 16
+  direct_opd_top_k_source: student
+  delta_anchor_adaptive_alpha_enabled: false
+  delta_anchor_alpha_init: 2.5
+  direct_kl_coef: null
+  delta_anchor_alpha_epsilon: 0.01
+  delta_anchor_alpha_min: 0.5
+  delta_anchor_alpha_max: 2.5
+  w2s_opd_enabled: false
+  w2s_opd_teacher_top_k: 32
+  w2s_opd_top_k_source: proxy_teacher
+  w2s_opd_divergence: reverse_kl
+  w2s_amplification: 1.0
+  w2s_positive_model_path: null
+  w2s_positive_model_revision: null
+  w2s_negative_model_path: null
+  w2s_negative_model_revision: null
+  w2s_student_base_model_path: null
+  w2s_student_base_model_revision: null
+  success_reward_threshold: 0.5
+  teacher_regularization: fixed
+  teacher_update_rate: 0.01
+  teacher_model_path: null
+  multi_teacher_enabled: false
+  multi_teacher_domains: []
+  multi_teacher_model_paths: []
+  multi_teacher_strict_domain_partition: true
+  keep_external_teacher_on_gpu: false
+  teacher_tokenizer_mismatch_policy: auto_mask_special
+  teacher_tokenizer_incompatible_token_ids: []
+  teacher_tokenizer_base_vocab_match: 1
+  teacher_num_rollouts: 8
+  max_reprompt_len: 10240
+  reprompt_truncation: right
+  dont_reprompt_on_self_success: true
+  solution_selection: first
+  successful_student_hint_source: peer_student
+  remove_thinking_from_demonstration: false
+  strip_thinking_tags_from_demonstration: true
+  is_clip: 2
+  is_clip_low: null
+  is_clip_high: 2.0
+  is_old_log_prob_source: null
+  sampled_rkl_use_importance_sampling: false
+  sampled_rkl_advantage_ratio_clip_low: null
+  sampled_rkl_advantage_ratio_clip_high: null
+  reprompt_template: '{prompt}{solution}{feedback}
+
+
+    Correctly solve the original question.'
+  solution_template: '
+
+    Correct solution:
+
+
+    {successful_previous_attempt}'
+clip_ratio_c: 3.0
+loss_agg_mode: token-mean
+loss_scale_factor: null
+entropy_coeff: 0
+calculate_entropy: false
+use_kl_loss: false
+use_prefix_grouper: false
+use_torch_compile: true
+kl_loss_coef: 0.001
+kl_loss_type: low_var_kl
+ppo_epochs: 1
+shuffle: false
+data_loader_seed: 42
+checkpoint:
+  _target_: verl.trainer.config.CheckpointConfig
+  save_contents:
+  - model
+  - optimizer
+  - extra
+  load_contents: ${.save_contents}
+  async_save: false
+optim:
+  lr: 1e-6
+  lr_warmup_steps_ratio: 0.0
+  total_training_steps: -1
+  weight_decay: 0.01
+  lr_warmup_steps: -1
+use_fused_kernels: ${oc.select:actor_rollout_ref.model.use_fused_kernels,false}
+profiler:
+  _target_: verl.utils.profiler.ProfilerConfig
+  tool: ${oc.select:global_profiler.tool,null}
+  enable: false
+  all_ranks: false
+  ranks: []
+  save_path: ${oc.select:global_profiler.save_path,null}
+  tool_config:
+    nsys:
+      _target_: verl.utils.profiler.config.NsightToolConfig
+      discrete: ${oc.select:global_profiler.global_tool_config.nsys.discrete}
+    npu:
+      _target_: verl.utils.profiler.config.NPUToolConfig
+      contents: []
+      level: level0
+      analysis: true
+      discrete: false
+    torch:
+      _target_: verl.utils.profiler.config.TorchProfilerToolConfig
+      step_start: 0
+      step_end: null
+    torch_memory:
+      _target_: verl.utils.profiler.config.TorchMemoryToolConfig
+      trace_alloc_max_entries: ${oc.select:global_profiler.global_tool_config.torch_memory.trace_alloc_max_entries,100000}
+      stack_depth: ${oc.select:global_profiler.global_tool_config.torch_memory.stack_depth,32}
+router_replay:
+  _target_: verl.workers.config.RouterReplayConfig
+  mode: disabled
+  record_file: null
+  replay_file: null

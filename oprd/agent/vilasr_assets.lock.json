@@ -1,0 +1,7 @@
+{
+  "upstream_git": "61669c02dbfadff57375c78fb3f7454ea81bb47a",
+  "data": {"repo": "AntResearchNLP/ViLaSR-data", "revision": "294604adbcd977f0ab27593ebd8fadb968a589db"},
+  "eval": {"repo": "AntResearchNLP/ViLaSR-eval", "revision": "f32fd5ce3564838e1756d67a1839ec70b62acae0"},
+  "student7b": {"repo": "AntResearchNLP/ViLaSR-cold-start", "revision": "65218a521c96fa47f31d756d646176f4fe410e20"},
+  "teacher3b_base": {"repo": "Qwen/Qwen2.5-VL-3B-Instruct", "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3"}
+}

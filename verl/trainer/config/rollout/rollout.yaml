@@ -1,0 +1,98 @@
+_target_: verl.workers.config.RolloutConfig
+name: ???
+mode: async
+temperature: 1.0
+top_k: -1
+top_p: 1
+prompt_length: ${oc.select:data.max_prompt_length,512}
+response_length: ${oc.select:data.max_response_length,512}
+dtype: bfloat16
+gpu_memory_utilization: 0.35
+ignore_eos: false
+enforce_eager: false
+cudagraph_capture_sizes: null
+free_cache_engine: true
+tensor_model_parallel_size: 1
+data_parallel_size: 1
+expert_parallel_size: 1
+pipeline_model_parallel_size: 1
+max_num_batched_tokens: 8192
+max_model_len: null
+max_num_seqs: 128
+enable_chunked_prefill: true
+enable_prefix_caching: true
+logprobs_mode: processed_logprobs
+scheduling_policy: fcfs
+load_format: dummy
+log_prob_micro_batch_size: null
+log_prob_micro_batch_size_per_gpu: null
+log_prob_use_dynamic_bsz: ${oc.select:actor_rollout_ref.actor.use_dynamic_bsz,false}
+log_prob_max_token_len_per_gpu: ${oc.select:actor_rollout_ref.actor.ppo_max_token_len_per_gpu,16384}
+disable_log_stats: true
+do_sample: true
+n: 1
+seed: 0
+over_sample_rate: 0
+multi_stage_wake_up: false
+engine_kwargs:
+  vllm: {}
+  sglang: {}
+val_kwargs:
+  _target_: verl.workers.config.SamplingConfig
+  top_k: 20
+  top_p: 0.8
+  temperature: 0.7
+  n: 8
+  response_length: null
+  do_sample: true
+  seed: 42
+multi_turn:
+  _target_: verl.workers.config.MultiTurnConfig
+  enable: false
+  max_assistant_turns: null
+  tool_config_path: null
+  max_user_turns: null
+  max_parallel_calls: 1
+  max_tool_response_length: 256
+  tool_response_truncate_side: middle
+  interaction_config_path: null
+  use_inference_chat_template: false
+  tokenization_sanity_check_mode: strict
+  format: hermes
+  num_repeat_rollouts: null
+calculate_log_probs: false
+agent:
+  _target_: verl.workers.config.AgentLoopConfig
+  num_workers: 8
+  default_agent_loop: single_turn_agent
+  agent_loop_config_path: null
+  custom_async_server:
+    _target_: verl.workers.config.CustomAsyncServerConfig
+    path: null
+    name: null
+update_weights_bucket_megabytes: 512
+trace:
+  _target_: verl.workers.config.TraceConfig
+  backend: null
+  token2text: false
+  max_samples_per_step_per_worker: null
+skip_rollout: false
+skip_dump_dir: /tmp/rollout_dump
+skip_tokenizer_init: true
+enable_rollout_routing_replay: false
+profiler:
+  _target_: verl.utils.profiler.ProfilerConfig
+  tool: ${oc.select:global_profiler.tool,null}
+  enable: ${oc.select:actor_rollout_ref.actor.profiler.enable,false}
+  all_ranks: ${oc.select:actor_rollout_ref.actor.profiler.all_ranks,false}
+  ranks: ${oc.select:actor_rollout_ref.actor.profiler.ranks,[]}
+  save_path: ${oc.select:global_profiler.save_path,null}
+  tool_config: ${oc.select:actor_rollout_ref.actor.profiler.tool_config,null}
+prometheus:
+  _target_: verl.workers.config.PrometheusConfig
+  enable: false
+  port: 9090
+  file: /tmp/ray/session_latest/metrics/prometheus/prometheus.yml
+  served_model_name: ${oc.select:actor_rollout_ref.model.path,null}
+quantization: null
+quantization_config_file: null

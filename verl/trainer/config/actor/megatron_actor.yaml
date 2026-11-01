@@ -1,0 +1,8 @@
+defaults:
+- ../optim@optim: megatron
+- ../engine@megatron: megatron
+- actor
+- _self_
+_target_: verl.workers.config.McoreActorConfig
+strategy: megatron
+load_weight: true

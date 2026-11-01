@@ -1,0 +1,2 @@
+- name: vilasr_agent
+  _target_: oprd.agent.vilasr_agent_loop.ViLaSRAgentLoop

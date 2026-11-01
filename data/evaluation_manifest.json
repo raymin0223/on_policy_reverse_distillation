@@ -1,0 +1,5289 @@
+{
+  "codecontests_revision": "802411c3010cb00d1b05bad57ca77365a3c699d6",
+  "codecontests": [
+    {
+      "uid": "codecontests:1575A",
+      "source_index": 0,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "2aaec09b1553e6e115521a5304be1842a617f9b5f6ffe43949c2ffe3543ec02c",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575B",
+      "source_index": 1,
+      "checker": {
+        "kind": "numeric",
+        "atol": "0.0001",
+        "rtol": "0.0001"
+      },
+      "tests_sha256": "95deefe21ef240c34c64e12608464ab7647c48ed795bfe4d1b5a2e2a06d69681",
+      "test_count": 209,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 5.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 7,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575C",
+      "source_index": 2,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "58f011c346dfabb79aed836fb42a389f147e56c5b53287823692ee2a0ff190f2",
+      "test_count": 206,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 3,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575D",
+      "source_index": 3,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "7a7c828282824d1224494e4fc3ec27045a7ec2fad8f08bf960d8035b3b7f17ad",
+      "test_count": 274,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 5,
+        "private_tests": 69,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575E",
+      "source_index": 4,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "de726f7616993cc290b938c6646d1bf591b80ce67d750a2a303555a428d95ea0",
+      "test_count": 204,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575F",
+      "source_index": 5,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "edabadecc5fc02ed737e8617d1b178666998c7518d174701ffacab4aa1749e96",
+      "test_count": 229,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 5,
+        "private_tests": 24,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575G",
+      "source_index": 6,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "fe7311ca3df3905b8eedba1a81a6dd90264e6c616353438fc342fa312256a1c8",
+      "test_count": 203,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575H",
+      "source_index": 7,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "0e5fe084b509cb17437c1834939330c36aab8c4683ae52a30ee431df40da19fc",
+      "test_count": 228,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 27,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575J",
+      "source_index": 9,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "9b325149388cbeda0ff024cbdba35afcc9d2e5d5e1062650ac8d8517b5cf3caa",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1575M",
+      "source_index": 12,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "c3b7ebcb8a39c567d30759e14d2f592c7e14bb31ed1a2fe071757614d401c176",
+      "test_count": 204,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1579A",
+      "source_index": 13,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "fc33c8afb5054a9e196c319fbdf8eebb10c7b521e5e05d6bc1dcb5ca9c0f22a5",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1579C",
+      "source_index": 15,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "f5f7216712e7e61079f950a4966ec78f91a0e4d5c04c1726e4537dc5d18d77b7",
+      "test_count": 210,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 9,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1579E2",
+      "source_index": 17,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "2351b481a3ae789455f05e57f283b1f5a2778220609af34b905aa3f712cf7dbe",
+      "test_count": 203,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1579F",
+      "source_index": 18,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "b1eb499c635369e13a2aaf920d03b46eb701ca664893504c9f0225a0c3bd0f37",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1579G",
+      "source_index": 19,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "8bc0ebd46bcadd73a8c3d8c3c679de18d3cf71b9362705dee764eff85480b39d",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1580A",
+      "source_index": 20,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "8f0a0c50afe77c363901c104c9670cd1c12a9183711cc9b9e3b8092a8ccab735",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1580B",
+      "source_index": 21,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "ff7f5424a79427dc099c1968d7c9bf3641660333cfd5d011e97163638887d8ed",
+      "test_count": 246,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 4,
+        "private_tests": 42,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1580C",
+      "source_index": 22,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "e4d25fab14cf07e1f0a2bc9be07bdaa831ba9860599ed8c1e5f762036d79a077",
+      "test_count": 204,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1580D",
+      "source_index": 23,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "942c05a4b3853730a1d869acb45ec06ae20b108d4786fc1ab5df9a475e3711cf",
+      "test_count": 209,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 4,
+        "private_tests": 5,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1580E",
+      "source_index": 24,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "bfe73d9e7822e2b78cd1e4baa29ea42d7d5afac3510c8e9cb57ab50ee228d0e8",
+      "test_count": 203,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.5,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1580F",
+      "source_index": 25,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "16b81668dc2273e4ee425976adfa9a1d0ed95105804c208b93a768f43d6b26a1",
+      "test_count": 245,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 8.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 42,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1581A",
+      "source_index": 26,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "ec3c611441483b64edab26e8b2692482d7d48439700873ddd568b2f393e4ca12",
+      "test_count": 209,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 8,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1581B",
+      "source_index": 27,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "05e315fb273942b655aaa164799365a2b98ed433f77036827e59c9081e01a71c",
+      "test_count": 209,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 8,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1582A",
+      "source_index": 28,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "b1ae93da910da0238427591eafab57efe517b8df16c27fff7c549131973058f2",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1582B",
+      "source_index": 29,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "bbc162c9b436eac86fff1ef8c21f99ce34a0d9275b655a251ba6b63ae9670feb",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1582C",
+      "source_index": 30,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "2053acb58383ea2ad11cecac11dba3db3d76a4fb8004406aecd487062affb668",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1582E",
+      "source_index": 32,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "326359e7d32840dbfbe599d90b8920aebe603a57da3330eee8b77836ddc32116",
+      "test_count": 203,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1582F1",
+      "source_index": 33,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "7f279869daa754cabd6782c777e08eb9443640f107df5dd54c1677bf2d266e0c",
+      "test_count": 212,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.5,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 10,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1582F2",
+      "source_index": 34,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "39321119ddb0135ddb9fe761394be1b06ed06b35ead6ec5724f1c8727d87c52f",
+      "test_count": 218,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.5,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 16,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1582G",
+      "source_index": 35,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "5f6d70e2c6704fe71abf3d1b0da5d0731c02c5c67c8fc986d454800a0b8369f0",
+      "test_count": 208,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 6,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1586C",
+      "source_index": 38,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "9cc050fa3c6030ff087fb8450dcdb4e6ef8a9b50ebfcee14e929973f98343c75",
+      "test_count": 223,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 22,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1586G",
+      "source_index": 42,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "a8e2e3d96210580a6a3201f9afb5fd0ea7726cfbe922d7083441ca602179d979",
+      "test_count": 94,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 5,
+        "private_tests": 8,
+        "generated_tests": 81
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1586H",
+      "source_index": 43,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "75fd6a5074ebb017605512da3087d6cb679ea24cc6b47ec772616c9c2bfa412a",
+      "test_count": 206,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 3,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1586I",
+      "source_index": 44,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "6d86d9f4d01a951e76ce85b6712554ca730306e99cdc911a85e8d546c99bfa77",
+      "test_count": 230,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 4,
+        "private_tests": 26,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1591B",
+      "source_index": 46,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "5f32aa940cad2b0cf3fcdf811d235c22c10d19be841eb85323092610a5062fd5",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1594B",
+      "source_index": 52,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "05a71c8bfd8121fb7c7d1afe94640988cea9745402219ebcd77da74a175f86ef",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1594D",
+      "source_index": 54,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "98ae1d4c5c52ac8772d5396588318d1f3bb7dc983004c502ce498928cb84eab0",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1594E1",
+      "source_index": 55,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "ff279b945048740cffe02c69f31878cf89514a170fe3e27299ce39ac0fdb7d1d",
+      "test_count": 63,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 12,
+        "generated_tests": 49
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1594E2",
+      "source_index": 56,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "343973af817a1b77218a909a657b909dedb56d244dc9d0dd378ca2e992079486",
+      "test_count": 208,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 5,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1594F",
+      "source_index": 57,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "d0eab8a66839370e13fbd49f02532ae329899fdee2cb5c9d6b094ce041dc6067",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1598A",
+      "source_index": 58,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "cf0e9976e2f7c090df38df5938f6ed00e36bbec63d18459ba78548f165f8f460",
+      "test_count": 204,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 3,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1598B",
+      "source_index": 59,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "7a7ec6fa62096e9472fa9c8d1cff5fb74fc9b993b5ba78f22d10488621f02b68",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1598C",
+      "source_index": 60,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "b69545e1bc29e39875e26a7ce8220731be6ca74a4ed21f8bb1159dbcaa4034b9",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1598D",
+      "source_index": 61,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "72abd18a345ed0398f760156c33b56c062b1d7e49369bffb9f92f48f9d648254",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1598F",
+      "source_index": 63,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "275abcb99b38eb57bba05b26840ad6dd87a7ba58ad8d2b1230216301b6e664df",
+      "test_count": 226,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 4,
+        "private_tests": 22,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1599B",
+      "source_index": 66,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "89839569e9fab240edbde277ac02571e9ab998a6e493c899fc815128de3d1419",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1599C",
+      "source_index": 67,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "027577bd586a3570f9a1ed6c6794d478ac234afe92ec46b1b0172f7ada42a760",
+      "test_count": 236,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 0.5,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 35,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1599D",
+      "source_index": 68,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "ea819c2064f2d2b5873bb6d7630e0c736988f4df87f4f33ded9cfad7f9c842ed",
+      "test_count": 206,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.5,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 4,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1599E",
+      "source_index": 69,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "89ad8ca1d8191009fc307efeb856851f2a19519d74f4b5a0708baa5464b98b9d",
+      "test_count": 204,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 5.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1599F",
+      "source_index": 70,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "c3f2e6900967804b3baa6ba489302d809db5f43b6050687872f3cf3ffe6e0440",
+      "test_count": 203,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1599G",
+      "source_index": 71,
+      "checker": {
+        "kind": "numeric",
+        "atol": "0.000001",
+        "rtol": "0"
+      },
+      "tests_sha256": "3662b061c7fda68345fb829358678f9369913315a41bdcfcafbcd475c3ecbc40",
+      "test_count": 204,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 3,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1599I",
+      "source_index": 73,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "10b3594cb9a56cc0de2eec3262d6e5f21e8c6cf5245480ca88f68d9a5c0b77b9",
+      "test_count": 210,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 8,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1600E",
+      "source_index": 75,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "cb2fcf0d4d01417dd9d0afd8ff07dfd16d70a84e3d2bed46b192834a849d386e",
+      "test_count": 205,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1600J",
+      "source_index": 77,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "66d5af6914035529b6a7ab7edb6ae9e70fb7ee21a32c0761eb23099a57ed24fc",
+      "test_count": 9,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 7
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1601A",
+      "source_index": 78,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "6fe14834f8b088b50ea77483fce5dcd6e810e0176c68ecab1329b1adf78865b5",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1601C",
+      "source_index": 80,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "1a416479eac19ea1445dab9f5a38c464a3694fae471d4131e60397eb22dbd895",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1601D",
+      "source_index": 81,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "64755727fee11d7dbacc4667b397cc97f4261788a34fb2e96459d7d962e14e01",
+      "test_count": 215,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 12,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1601E",
+      "source_index": 82,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "10f16d903f81adcbc761538d57a892a0c7586a4b87cc3a7ffadd305748c6d05a",
+      "test_count": 204,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 3,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1601F",
+      "source_index": 83,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "fa0db976bfc3c059b54fba6e8d0d764ced5c8e9391c9c760c5f57a12724a8a84",
+      "test_count": 321,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 4,
+        "private_tests": 117,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1603D",
+      "source_index": 84,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "005fd03af60dbc375caafc435507f483951865681e565cd911a397542654bc93",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 1024000000
+    },
+    {
+      "uid": "codecontests:1603E",
+      "source_index": 85,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "508177ac6eaed86f60d9bd1ac17e38fce7fe4583b1a218f27841db3905c52aeb",
+      "test_count": 252,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 49,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1603F",
+      "source_index": 86,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "70c4f500ad7381fd9ac17dd0239e5033c521ea23849a3a63f798323f81561c15",
+      "test_count": 207,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 6,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1604A",
+      "source_index": 87,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "af91e53657652f33499337514287aa2067cd2363b8c3786c0954ba9d3b7b8efa",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1604B",
+      "source_index": 88,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "f4571dcb654077ffc04a4e62dd3bdba7ff5f89f7f3ddad74992164fa8e954b9b",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1604E",
+      "source_index": 91,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "7fab617ecfa200a2e69fac6c3b935b770aa77a77f52c4464c30f07fc419950c3",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1606B",
+      "source_index": 93,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "b4c83764ab9dbe5ab582f4a6d43e4f7786f2408aa0bbb8566b1821dc5b966355",
+      "test_count": 241,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 40,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1606C",
+      "source_index": 94,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "be38d5d47b7df3722475f1be6678500f7885e8103375f302e395d78dac3a316d",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1606F",
+      "source_index": 97,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "75bb24eda0505f1bba7af414e097384f36b5b92600ff1f9bffc01c469974691f",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 6.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1607A",
+      "source_index": 98,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "62e851780156e87ca5a1afcf7e4bc7f29f498867563d51bc538e3db68d3f27a2",
+      "test_count": 203,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 2,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1607B",
+      "source_index": 99,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "fef8d7368cc29956ef56fbd5ff392bb64597fae0b835ec5be71290cec7d5e76a",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1607C",
+      "source_index": 100,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "d03a29879d2f45386599bb49bf6d8e0dfe3863ac7240ea622891c350dbbca04a",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1607D",
+      "source_index": 101,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "1fed697757859e2e53a950caf6bea9545df5ef4fc44921b8d440def7ae105591",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1608C",
+      "source_index": 108,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "84cfdb9c178818a706b39a0420e36011f4f825718e801c07d70d42f5332f7d34",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1608D",
+      "source_index": 109,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "6c6348b14dcf17ca5c7ee829eb2a4856bc01db496c369dfebf46068595e21858",
+      "test_count": 207,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 4,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1608E",
+      "source_index": 110,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "602ded5228bdb1ca69fd7a04d8ca2f0edfb910e9c5cc3af05768b94a7bd3c69d",
+      "test_count": 213,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 11,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1608F",
+      "source_index": 111,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "3d604730bbc1266798f67cb4339020eb003b8bdd3a4b66002873f99c243f69e9",
+      "test_count": 212,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 5,
+        "private_tests": 7,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1608G",
+      "source_index": 112,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "a7881ca54f1ca82fd12d7ff71c1fac1b8a61d5bd78444f5bf4f9b2e7bd30e52a",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 3.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1613A",
+      "source_index": 113,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "76549a6141bf61c9a557aded833e35d5c3f55ccce490b691f6c6bb852c859cd1",
+      "test_count": 228,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 27,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1613C",
+      "source_index": 115,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "ac4f5e4ec0c0b70a763cef4c61ca808a5a6637498da802db9d04a0381c12f940",
+      "test_count": 205,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 4,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1613D",
+      "source_index": 116,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "da556b13421b00621477c3c92d15410f4e513b850889969a6c36b7ed790a5e16",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1613F",
+      "source_index": 118,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "0809389dc7380745ef5a8d5f6796919e339e7e1752553a4a07cd40ec62ae7c31",
+      "test_count": 212,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.5,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 9,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1615A",
+      "source_index": 119,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "cd4c35ffb9ee6db3934df202cbc93e2cee5de1c8f7548b13b4bfd1b629f406c0",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1615B",
+      "source_index": 120,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "f0694f8b27d1e89b3145bc6b2b20b8c637bde50c11888636c4fa72b9babe0e17",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1615C",
+      "source_index": 121,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "8504f25d601ede799ac2f2f93e568f0e89ef538c07b659c63cd9c018155dace0",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1615F",
+      "source_index": 124,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "dde3841b78b7fdd79c1bd52090add7121d374116523864d44a5dcd614d2df862",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1617A",
+      "source_index": 127,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "cc886a0eadacafb6a99647ad80f1998eab89ce127b77be4835d080d6f5aa5658",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1617C",
+      "source_index": 129,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "e1b516ca74b5b192bdc1132dc1384b25110f946574c993095e2b02f993822e31",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1618D",
+      "source_index": 135,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "45a8c16b96dfe6d2fd51e16e605809fd395193e5cd6bddb26309f8f7bdfbf8bd",
+      "test_count": 237,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 36,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1618F",
+      "source_index": 137,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "060368b125873abed8878b495198e713ffb068552d4ca97009746dc26af6f11d",
+      "test_count": 285,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 5,
+        "private_tests": 80,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1618G",
+      "source_index": 138,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "e8c78289d4f311c8a9bf4ce6fa2b9921b80e1f78bea39ab01fbc51424691444c",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.5,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1619A",
+      "source_index": 139,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "1945f9e750b47a89d4b0d20f61f4d9473f85fc126cd7ae4010b0478b5bdffdc4",
+      "test_count": 204,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 3,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1619B",
+      "source_index": 140,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "686f17a6794ce01760d6fef8a0efee130a538fbbc72f3b6520e708059f061d91",
+      "test_count": 338,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 137,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1619D",
+      "source_index": 142,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "f55f8648d41b61c58e60159e9b4ea32e6d8951071053c396932c2eab4b55a317",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1619E",
+      "source_index": 143,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "850c0c350e94c7f2bc800bba0cecddb962c8631662f047c66c7ba7ba51017bba",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1619G",
+      "source_index": 145,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "311a3ebead52725ed74dbd69bffff401411ca7f98f55ce3ad37e6223785e4eda",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1619H",
+      "source_index": 146,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "9780773432b50217dada5e0509acea1575d14aee38f1f4cc4fcb4065f4818173",
+      "test_count": 205,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 4.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 2,
+        "private_tests": 3,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1620A",
+      "source_index": 147,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "d62a5fade7a21866a56817893bec66d21caa71ef6fe386de5df6e6a155c94dc0",
+      "test_count": 205,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 4,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1620B",
+      "source_index": 148,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "8356daf3c837f4e57847251752e002d8eed9dd67d96fcc451c974ef71f9a5a5b",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1620C",
+      "source_index": 149,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "aa85a4447bea039f177b785a7614f0ce36ea20ae33eadbaa4f196745619d72f4",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1620D",
+      "source_index": 150,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "4a27d15aa585d77ef821a640cc73d7c71a9acf773f4f9d5d56cedb0dc7c016be",
+      "test_count": 202,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 1,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1620E",
+      "source_index": 151,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "708a04cef9f76523c310f4f41a81daaa41509373592be7296a9b47d02538bb22",
+      "test_count": 207,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 3,
+        "private_tests": 4,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1620G",
+      "source_index": 153,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "c8ba20e4b8503ef9ac90629c27128da1f1c7c857821aa6dfe0b4b629d7480163",
+      "test_count": 226,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 10.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 5,
+        "private_tests": 21,
+        "generated_tests": 200
+      },
+      "reference_status": "passed_cpp_reference",
+      "memory_limit_bytes": 1024000000
+    },
+    {
+      "uid": "codecontests:1622A",
+      "source_index": 154,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": true
+      },
+      "tests_sha256": "c6406e847abf926930de7452f4ff4765d9d4551450ec1ae829baace80dc0c2a3",
+      "test_count": 210,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 9,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1622C",
+      "source_index": 156,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "82c16ae4e417c823d58b3148d3a9d99115101a5d8d5d2352ec1533252a75a15e",
+      "test_count": 209,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 8,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    },
+    {
+      "uid": "codecontests:1622D",
+      "source_index": 157,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "4b8e683ccab4c138d19dba65aa50f7bf06d7b0a12046b3ad11dd4e4113b4927a",
+      "test_count": 213,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 2.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 4,
+        "private_tests": 9,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 512000000
+    },
+    {
+      "uid": "codecontests:1623A",
+      "source_index": 160,
+      "checker": {
+        "kind": "tokens",
+        "case_insensitive": false
+      },
+      "tests_sha256": "66bcb5f2cff87dffd755b68e02f526528aceed78b34962ea7d8446262898816e",
+      "test_count": 201,
+      "source_url": null,
+      "test_transform": null,
+      "original_tests_sha256": null,
+      "timeout_seconds": 1.0,
+      "reference_origin": "source_dataset",
+      "test_groups": {
+        "public_tests": 1,
+        "private_tests": 0,
+        "generated_tests": 200
+      },
+      "reference_status": "passed",
+      "memory_limit_bytes": 256000000
+    }
+  ],
+  "humanevalplus": {
+    "source_url": "https://github.com/evalplus/humanevalplus_release/releases/download/v0.1.10/HumanEvalPlus.jsonl.gz",
+    "data_version": "v0.1.10",
+    "task_ids": [
+      "HumanEval/0",
+      "HumanEval/1",
+      "HumanEval/2",
+      "HumanEval/3",
+      "HumanEval/4",
+      "HumanEval/5",
+      "HumanEval/6",
+      "HumanEval/7",
+      "HumanEval/8",
+      "HumanEval/9",
+      "HumanEval/10",
+      "HumanEval/11",
+      "HumanEval/12",
+      "HumanEval/13",
+      "HumanEval/14",
+      "HumanEval/15",
+      "HumanEval/16",
+      "HumanEval/17",
+      "HumanEval/18",
+      "HumanEval/19",
+      "HumanEval/20",
+      "HumanEval/21",
+      "HumanEval/22",
+      "HumanEval/23",
+      "HumanEval/24",
+      "HumanEval/25",
+      "HumanEval/26",
+      "HumanEval/27",
+      "HumanEval/28",
+      "HumanEval/29",
+      "HumanEval/30",
+      "HumanEval/31",
+      "HumanEval/33",
+      "HumanEval/34",
+      "HumanEval/35",
+      "HumanEval/36",
+      "HumanEval/37",
+      "HumanEval/38",
+      "HumanEval/39",
+      "HumanEval/40",
+      "HumanEval/41",
+      "HumanEval/42",
+      "HumanEval/43",
+      "HumanEval/44",
+      "HumanEval/45",
+      "HumanEval/46",
+      "HumanEval/47",
+      "HumanEval/48",
+      "HumanEval/49",
+      "HumanEval/50",
+      "HumanEval/51",
+      "HumanEval/52",
+      "HumanEval/53",
+      "HumanEval/54",
+      "HumanEval/55",
+      "HumanEval/56",
+      "HumanEval/57",
+      "HumanEval/58",
+      "HumanEval/59",
+      "HumanEval/60",
+      "HumanEval/61",
+      "HumanEval/62",
+      "HumanEval/63",
+      "HumanEval/64",
+      "HumanEval/65",
+      "HumanEval/66",
+      "HumanEval/67",
+      "HumanEval/68",
+      "HumanEval/69",
+      "HumanEval/70",
+      "HumanEval/71",
+      "HumanEval/72",
+      "HumanEval/73",
+      "HumanEval/74",
+      "HumanEval/75",
+      "HumanEval/76",
+      "HumanEval/77",
+      "HumanEval/78",
+      "HumanEval/79",
+      "HumanEval/80",
+      "HumanEval/81",
+      "HumanEval/82",
+      "HumanEval/83",
+      "HumanEval/84",
+      "HumanEval/85",
+      "HumanEval/86",
+      "HumanEval/87",
+      "HumanEval/88",
+      "HumanEval/89",
+      "HumanEval/90",
+      "HumanEval/91",
+      "HumanEval/92",
+      "HumanEval/93",
+      "HumanEval/94",
+      "HumanEval/95",
+      "HumanEval/96",
+      "HumanEval/97",
+      "HumanEval/98",
+      "HumanEval/99",
+      "HumanEval/100",
+      "HumanEval/101",
+      "HumanEval/102",
+      "HumanEval/103",
+      "HumanEval/104",
+      "HumanEval/105",
+      "HumanEval/106",
+      "HumanEval/107",
+      "HumanEval/108",
+      "HumanEval/109",
+      "HumanEval/110",
+      "HumanEval/111",
+      "HumanEval/112",
+      "HumanEval/113",
+      "HumanEval/114",
+      "HumanEval/115",
+      "HumanEval/116",
+      "HumanEval/117",
+      "HumanEval/118",
+      "HumanEval/119",
+      "HumanEval/120",
+      "HumanEval/121",
+      "HumanEval/122",
+      "HumanEval/123",
+      "HumanEval/124",
+      "HumanEval/125",
+      "HumanEval/126",
+      "HumanEval/127",
+      "HumanEval/128",
+      "HumanEval/129",
+      "HumanEval/130",
+      "HumanEval/131",
+      "HumanEval/132",
+      "HumanEval/133",
+      "HumanEval/134",
+      "HumanEval/135",
+      "HumanEval/136",
+      "HumanEval/137",
+      "HumanEval/138",
+      "HumanEval/139",
+      "HumanEval/140",
+      "HumanEval/141",
+      "HumanEval/142",
+      "HumanEval/143",
+      "HumanEval/144",
+      "HumanEval/145",
+      "HumanEval/146",
+      "HumanEval/147",
+      "HumanEval/148",
+      "HumanEval/149",
+      "HumanEval/150",
+      "HumanEval/151",
+      "HumanEval/152",
+      "HumanEval/153",
+      "HumanEval/154",
+      "HumanEval/155",
+      "HumanEval/156",
+      "HumanEval/157",
+      "HumanEval/158",
+      "HumanEval/159",
+      "HumanEval/160",
+      "HumanEval/161",
+      "HumanEval/162",
+      "HumanEval/163"
+    ],
+    "excluded_task_ids": [
+      "HumanEval/32"
+    ],
+    "original_count": 164,
+    "included_count": 163,
+    "snapshot_sha256": "f80487ffb033607920eca8f33471cbb15c10696487b0fa6af08825d7987e0071"
+  },
+  "apps_revision": "21e74ddf8de1a21436da12e3e653065c5213e9d1",
+  "apps_task_ids": [
+    {
+      "task_id": "3000",
+      "url": "https://open.kattis.com/problems/bracketsequence"
+    },
+    {
+      "task_id": "3001",
+      "url": "https://open.kattis.com/problems/spinningup"
+    },
+    {
+      "task_id": "3002",
+      "url": "https://open.kattis.com/problems/odometeranalysis"
+    },
+    {
+      "task_id": "3003",
+      "url": "https://open.kattis.com/problems/coloring"
+    },
+    {
+      "task_id": "3004",
+      "url": "https://open.kattis.com/problems/paintingafence"
+    },
+    {
+      "task_id": "3005",
+      "url": "https://open.kattis.com/problems/stringfactoring"
+    },
+    {
+      "task_id": "3006",
+      "url": "https://open.kattis.com/problems/longlongstrings"
+    },
+    {
+      "task_id": "3007",
+      "url": "https://open.kattis.com/problems/bling"
+    },
+    {
+      "task_id": "3008",
+      "url": "https://open.kattis.com/problems/assistantranking"
+    },
+    {
+      "task_id": "3009",
+      "url": "https://open.kattis.com/problems/physiognomy"
+    },
+    {
+      "task_id": "3010",
+      "url": "https://open.kattis.com/problems/crisscross"
+    },
+    {
+      "task_id": "3011",
+      "url": "https://open.kattis.com/problems/hillnumbers"
+    },
+    {
+      "task_id": "3012",
+      "url": "https://open.kattis.com/problems/balltricks"
+    },
+    {
+      "task_id": "3013",
+      "url": "https://open.kattis.com/problems/archimedes"
+    },
+    {
+      "task_id": "3014",
+      "url": "https://open.kattis.com/problems/exitsinexcess"
+    },
+    {
+      "task_id": "3015",
+      "url": "https://open.kattis.com/problems/hamster"
+    },
+    {
+      "task_id": "3016",
+      "url": "https://open.kattis.com/problems/ballcolors"
+    },
+    {
+      "task_id": "3017",
+      "url": "https://open.kattis.com/problems/powersof2"
+    },
+    {
+      "task_id": "3018",
+      "url": "https://open.kattis.com/problems/pickingupthedice"
+    },
+    {
+      "task_id": "3019",
+      "url": "https://open.kattis.com/problems/data"
+    },
+    {
+      "task_id": "3020",
+      "url": "https://open.kattis.com/problems/newmaths"
+    },
+    {
+      "task_id": "3021",
+      "url": "https://open.kattis.com/problems/easyascab"
+    },
+    {
+      "task_id": "3022",
+      "url": "https://open.kattis.com/problems/diversecookies"
+    },
+    {
+      "task_id": "3023",
+      "url": "https://open.kattis.com/problems/birthdaycake"
+    },
+    {
+      "task_id": "3024",
+      "url": "https://open.kattis.com/problems/isomorphicinversion"
+    },
+    {
+      "task_id": "3025",
+      "url": "https://open.kattis.com/problems/goldbandits"
+    },
+    {
+      "task_id": "3026",
+      "url": "https://open.kattis.com/problems/criticalelements"
+    },
+    {
+      "task_id": "3027",
+      "url": "https://open.kattis.com/problems/stampstamp"
+    },
+    {
+      "task_id": "3028",
+      "url": "https://open.kattis.com/problems/primonimo"
+    },
+    {
+      "task_id": "3029",
+      "url": "https://open.kattis.com/problems/neverjumpdown"
+    },
+    {
+      "task_id": "3030",
+      "url": "https://open.kattis.com/problems/heapstrees"
+    },
+    {
+      "task_id": "3031",
+      "url": "https://open.kattis.com/problems/rainbowroads"
+    },
+    {
+      "task_id": "3032",
+      "url": "https://open.kattis.com/problems/harvard"
+    },
+    {
+      "task_id": "3033",
+      "url": "https://open.kattis.com/problems/multiplyingdigits"
+    },
+    {
+      "task_id": "3034",
+      "url": "https://open.kattis.com/problems/expectingrain"
+    },
+    {
+      "task_id": "3035",
+      "url": "https://open.kattis.com/problems/lemonadetrade"
+    },
+    {
+      "task_id": "3036",
+      "url": "https://open.kattis.com/problems/kitchencombinatorics"
+    },
+    {
+      "task_id": "3037",
+      "url": "https://open.kattis.com/problems/whiteboard"
+    },
+    {
+      "task_id": "3038",
+      "url": "https://open.kattis.com/problems/kallaxconstruction"
+    },
+    {
+      "task_id": "3039",
+      "url": "https://open.kattis.com/problems/foldingacube"
+    },
+    {
+      "task_id": "3040",
+      "url": "https://open.kattis.com/problems/repeatedsubstrings"
+    },
+    {
+      "task_id": "3041",
+      "url": "https://open.kattis.com/problems/coupons"
+    },
+    {
+      "task_id": "3042",
+      "url": "https://open.kattis.com/problems/lcmtree"
+    },
+    {
+      "task_id": "3043",
+      "url": "https://open.kattis.com/problems/treasure"
+    },
+    {
+      "task_id": "3044",
+      "url": "https://open.kattis.com/problems/buggyrobot"
+    },
+    {
+      "task_id": "3045",
+      "url": "https://open.kattis.com/problems/manhattanpositioningsystem"
+    },
+    {
+      "task_id": "3046",
+      "url": "https://open.kattis.com/problems/visual"
+    },
+    {
+      "task_id": "3047",
+      "url": "https://open.kattis.com/problems/cafeteria"
+    },
+    {
+      "task_id": "3048",
+      "url": "https://open.kattis.com/problems/gottacatchemall"
+    },
+    {
+      "task_id": "3049",
+      "url": "https://open.kattis.com/problems/chasingsubs"
+    },
+    {
+      "task_id": "3050",
+      "url": "https://open.kattis.com/problems/cool1"
+    },
+    {
+      "task_id": "3051",
+      "url": "https://open.kattis.com/problems/fogcatchers"
+    },
+    {
+      "task_id": "3052",
+      "url": "https://open.kattis.com/problems/airportlogistics"
+    },
+    {
+      "task_id": "3053",
+      "url": "https://open.kattis.com/problems/inspirationmanifestation"
+    },
+    {
+      "task_id": "3054",
+      "url": "https://open.kattis.com/problems/haikuformatting"
+    },
+    {
+      "task_id": "3055",
+      "url": "https://open.kattis.com/problems/thore"
+    },
+    {
+      "task_id": "3056",
+      "url": "https://open.kattis.com/problems/setnja"
+    },
+    {
+      "task_id": "3057",
+      "url": "https://open.kattis.com/problems/more10"
+    },
+    {
+      "task_id": "3058",
+      "url": "https://open.kattis.com/problems/evolution"
+    },
+    {
+      "task_id": "3059",
+      "url": "https://open.kattis.com/problems/greatexpectations"
+    },
+    {
+      "task_id": "3060",
+      "url": "https://open.kattis.com/problems/gwensgift"
+    },
+    {
+      "task_id": "3061",
+      "url": "https://open.kattis.com/problems/commemorativerace"
+    },
+    {
+      "task_id": "3062",
+      "url": "https://open.kattis.com/problems/rocketpoweredhovercraft"
+    },
+    {
+      "task_id": "3063",
+      "url": "https://open.kattis.com/problems/dugovi"
+    },
+    {
+      "task_id": "3064",
+      "url": "https://open.kattis.com/problems/staza"
+    },
+    {
+      "task_id": "3065",
+      "url": "https://open.kattis.com/problems/borgboogie"
+    },
+    {
+      "task_id": "3066",
+      "url": "https://open.kattis.com/problems/reconstructingtapeart"
+    },
+    {
+      "task_id": "3067",
+      "url": "https://open.kattis.com/problems/pasijans"
+    },
+    {
+      "task_id": "3068",
+      "url": "https://open.kattis.com/problems/blackvienna"
+    },
+    {
+      "task_id": "3069",
+      "url": "https://open.kattis.com/problems/brackets"
+    },
+    {
+      "task_id": "3070",
+      "url": "https://open.kattis.com/problems/compensation"
+    },
+    {
+      "task_id": "3071",
+      "url": "https://open.kattis.com/problems/gamescheduling"
+    },
+    {
+      "task_id": "3072",
+      "url": "https://open.kattis.com/problems/stol"
+    },
+    {
+      "task_id": "3073",
+      "url": "https://open.kattis.com/problems/knightofthetarotcards"
+    },
+    {
+      "task_id": "3074",
+      "url": "https://open.kattis.com/problems/cryptotrouble"
+    },
+    {
+      "task_id": "3075",
+      "url": "https://open.kattis.com/problems/roadtrip"
+    },
+    {
+      "task_id": "3076",
+      "url": "https://open.kattis.com/problems/thief"
+    },
+    {
+      "task_id": "3077",
+      "url": "https://open.kattis.com/problems/areaofeffect"
+    },
+    {
+      "task_id": "3078",
+      "url": "https://open.kattis.com/problems/dvoniz"
+    },
+    {
+      "task_id": "3079",
+      "url": "https://open.kattis.com/problems/igra"
+    },
+    {
+      "task_id": "3080",
+      "url": "https://open.kattis.com/problems/skiresort"
+    },
+    {
+      "task_id": "3081",
+      "url": "https://open.kattis.com/problems/airports"
+    },
+    {
+      "task_id": "3082",
+      "url": "https://open.kattis.com/problems/buffet"
+    },
+    {
+      "task_id": "3083",
+      "url": "https://open.kattis.com/problems/playlist"
+    },
+    {
+      "task_id": "3084",
+      "url": "https://open.kattis.com/problems/enteringthetime"
+    },
+    {
+      "task_id": "3085",
+      "url": "https://open.kattis.com/problems/bracketnotation"
+    },
+    {
+      "task_id": "3086",
+      "url": "https://open.kattis.com/problems/planete"
+    },
+    {
+      "task_id": "3087",
+      "url": "https://open.kattis.com/problems/dancehard"
+    },
+    {
+      "task_id": "3088",
+      "url": "https://open.kattis.com/problems/swapfrenzy"
+    },
+    {
+      "task_id": "3089",
+      "url": "https://open.kattis.com/problems/randommanhattan"
+    },
+    {
+      "task_id": "3090",
+      "url": "https://open.kattis.com/problems/ecocover"
+    },
+    {
+      "task_id": "3091",
+      "url": "https://open.kattis.com/problems/kenken"
+    },
+    {
+      "task_id": "3092",
+      "url": "https://open.kattis.com/problems/najkraci"
+    },
+    {
+      "task_id": "3093",
+      "url": "https://open.kattis.com/problems/paleta"
+    },
+    {
+      "task_id": "3094",
+      "url": "https://open.kattis.com/problems/chairhopping"
+    },
+    {
+      "task_id": "3095",
+      "url": "https://open.kattis.com/problems/neo"
+    },
+    {
+      "task_id": "3096",
+      "url": "https://open.kattis.com/problems/uzastopni"
+    },
+    {
+      "task_id": "3097",
+      "url": "https://open.kattis.com/problems/san"
+    },
+    {
+      "task_id": "3098",
+      "url": "https://open.kattis.com/problems/pieceofcake"
+    },
+    {
+      "task_id": "3099",
+      "url": "https://open.kattis.com/problems/intelligenceinfection"
+    },
+    {
+      "task_id": "3100",
+      "url": "https://open.kattis.com/problems/applescherriesmangos"
+    },
+    {
+      "task_id": "3101",
+      "url": "https://open.kattis.com/problems/arrayofdiscord"
+    },
+    {
+      "task_id": "3102",
+      "url": "https://open.kattis.com/problems/caveatemptor"
+    },
+    {
+      "task_id": "3103",
+      "url": "https://open.kattis.com/problems/helpfulcurrents"
+    },
+    {
+      "task_id": "3104",
+      "url": "https://open.kattis.com/problems/jednakost"
+    },
+    {
+      "task_id": "3105",
+      "url": "https://open.kattis.com/problems/wiknow"
+    },
+    {
+      "task_id": "3106",
+      "url": "https://open.kattis.com/problems/flashingfluorescents"
+    },
+    {
+      "task_id": "3107",
+      "url": "https://open.kattis.com/problems/kamioni"
+    },
+    {
+      "task_id": "3108",
+      "url": "https://open.kattis.com/problems/prosjek2"
+    },
+    {
+      "task_id": "3109",
+      "url": "https://open.kattis.com/problems/sandart"
+    },
+    {
+      "task_id": "3110",
+      "url": "https://open.kattis.com/problems/countingcodes"
+    },
+    {
+      "task_id": "3111",
+      "url": "https://open.kattis.com/problems/redoks"
+    },
+    {
+      "task_id": "3112",
+      "url": "https://open.kattis.com/problems/conveyorbelts"
+    },
+    {
+      "task_id": "3113",
+      "url": "https://open.kattis.com/problems/triangularclouds"
+    },
+    {
+      "task_id": "3114",
+      "url": "https://open.kattis.com/problems/onewayroads"
+    },
+    {
+      "task_id": "3115",
+      "url": "https://open.kattis.com/problems/chesstournament"
+    },
+    {
+      "task_id": "3116",
+      "url": "https://open.kattis.com/problems/starsinacan"
+    },
+    {
+      "task_id": "3117",
+      "url": "https://open.kattis.com/problems/dvaput"
+    },
+    {
+      "task_id": "3118",
+      "url": "https://open.kattis.com/problems/deckrandomisation"
+    },
+    {
+      "task_id": "3119",
+      "url": "https://open.kattis.com/problems/heropower"
+    },
+    {
+      "task_id": "3120",
+      "url": "https://open.kattis.com/problems/equality"
+    },
+    {
+      "task_id": "3121",
+      "url": "https://open.kattis.com/problems/geezerscripts"
+    },
+    {
+      "task_id": "3122",
+      "url": "https://open.kattis.com/problems/amanda"
+    },
+    {
+      "task_id": "3123",
+      "url": "https://open.kattis.com/problems/string"
+    },
+    {
+      "task_id": "3124",
+      "url": "https://open.kattis.com/problems/ivana"
+    },
+    {
+      "task_id": "3125",
+      "url": "https://open.kattis.com/problems/apostrophecatastrophe"
+    },
+    {
+      "task_id": "3126",
+      "url": "https://open.kattis.com/problems/jumpingchoreography"
+    },
+    {
+      "task_id": "3127",
+      "url": "https://open.kattis.com/problems/disposableswitches"
+    },
+    {
+      "task_id": "3128",
+      "url": "https://open.kattis.com/problems/starwarsmovies"
+    },
+    {
+      "task_id": "3129",
+      "url": "https://open.kattis.com/problems/haybales"
+    },
+    {
+      "task_id": "3130",
+      "url": "https://open.kattis.com/problems/holmes"
+    },
+    {
+      "task_id": "3131",
+      "url": "https://open.kattis.com/problems/perica"
+    },
+    {
+      "task_id": "3132",
+      "url": "https://open.kattis.com/problems/mravojed"
+    },
+    {
+      "task_id": "3133",
+      "url": "https://open.kattis.com/problems/driverdisagreement"
+    },
+    {
+      "task_id": "3134",
+      "url": "https://open.kattis.com/problems/recovery"
+    },
+    {
+      "task_id": "3135",
+      "url": "https://open.kattis.com/problems/powersigns"
+    },
+    {
+      "task_id": "3136",
+      "url": "https://open.kattis.com/problems/chromiumshipping"
+    },
+    {
+      "task_id": "3137",
+      "url": "https://open.kattis.com/problems/bakterije"
+    },
+    {
+      "task_id": "3138",
+      "url": "https://open.kattis.com/problems/sumandproduct"
+    },
+    {
+      "task_id": "3139",
+      "url": "https://open.kattis.com/problems/ispiti"
+    },
+    {
+      "task_id": "3140",
+      "url": "https://open.kattis.com/problems/fishingcontest"
+    },
+    {
+      "task_id": "3141",
+      "url": "https://open.kattis.com/problems/weirdflecksbutok"
+    },
+    {
+      "task_id": "3142",
+      "url": "https://open.kattis.com/problems/cudak"
+    },
+    {
+      "task_id": "3143",
+      "url": "https://open.kattis.com/problems/attendance"
+    },
+    {
+      "task_id": "3144",
+      "url": "https://open.kattis.com/problems/cheatingluck"
+    },
+    {
+      "task_id": "3145",
+      "url": "https://open.kattis.com/problems/v"
+    },
+    {
+      "task_id": "3146",
+      "url": "https://open.kattis.com/problems/pharmacy"
+    },
+    {
+      "task_id": "3147",
+      "url": "https://open.kattis.com/problems/debug"
+    },
+    {
+      "task_id": "3148",
+      "url": "https://open.kattis.com/problems/lifeguards"
+    },
+    {
+      "task_id": "3149",
+      "url": "https://open.kattis.com/problems/holidaystars"
+    },
+    {
+      "task_id": "3150",
+      "url": "https://open.kattis.com/problems/straza"
+    },
+    {
+      "task_id": "3151",
+      "url": "https://open.kattis.com/problems/floorplan"
+    },
+    {
+      "task_id": "3152",
+      "url": "https://open.kattis.com/problems/norma"
+    },
+    {
+      "task_id": "3153",
+      "url": "https://open.kattis.com/problems/slicice"
+    },
+    {
+      "task_id": "3154",
+      "url": "https://open.kattis.com/problems/jealousyoungsters"
+    },
+    {
+      "task_id": "3155",
+      "url": "https://open.kattis.com/problems/aijeopardy"
+    },
+    {
+      "task_id": "3156",
+      "url": "https://open.kattis.com/problems/abandonedanimal"
+    },
+    {
+      "task_id": "3157",
+      "url": "https://open.kattis.com/problems/hash"
+    },
+    {
+      "task_id": "3158",
+      "url": "https://open.kattis.com/problems/multitouch"
+    },
+    {
+      "task_id": "3159",
+      "url": "https://open.kattis.com/problems/ads"
+    },
+    {
+      "task_id": "3160",
+      "url": "https://open.kattis.com/problems/imoharderproblem"
+    },
+    {
+      "task_id": "3161",
+      "url": "https://open.kattis.com/problems/slikar2"
+    },
+    {
+      "task_id": "3162",
+      "url": "https://open.kattis.com/problems/pixelated"
+    },
+    {
+      "task_id": "3163",
+      "url": "https://open.kattis.com/problems/police"
+    },
+    {
+      "task_id": "3164",
+      "url": "https://open.kattis.com/problems/paired"
+    },
+    {
+      "task_id": "3165",
+      "url": "https://open.kattis.com/problems/topovi"
+    },
+    {
+      "task_id": "3166",
+      "url": "https://open.kattis.com/problems/pongtournament"
+    },
+    {
+      "task_id": "3167",
+      "url": "https://open.kattis.com/problems/program"
+    },
+    {
+      "task_id": "3168",
+      "url": "https://open.kattis.com/problems/bst"
+    },
+    {
+      "task_id": "3169",
+      "url": "https://open.kattis.com/problems/artur"
+    },
+    {
+      "task_id": "3170",
+      "url": "https://open.kattis.com/problems/trash"
+    },
+    {
+      "task_id": "3171",
+      "url": "https://open.kattis.com/problems/fakenews"
+    },
+    {
+      "task_id": "3172",
+      "url": "https://open.kattis.com/problems/fruitslicer"
+    },
+    {
+      "task_id": "3173",
+      "url": "https://open.kattis.com/problems/droppingball2"
+    },
+    {
+      "task_id": "3174",
+      "url": "https://open.kattis.com/problems/drzava"
+    },
+    {
+      "task_id": "3175",
+      "url": "https://open.kattis.com/problems/sheep"
+    },
+    {
+      "task_id": "3176",
+      "url": "https://open.kattis.com/problems/barica"
+    },
+    {
+      "task_id": "3177",
+      "url": "https://open.kattis.com/problems/poslozi"
+    },
+    {
+      "task_id": "3178",
+      "url": "https://open.kattis.com/problems/winterfestival"
+    },
+    {
+      "task_id": "3179",
+      "url": "https://open.kattis.com/problems/canyon"
+    },
+    {
+      "task_id": "3180",
+      "url": "https://open.kattis.com/problems/slika"
+    },
+    {
+      "task_id": "3181",
+      "url": "https://open.kattis.com/problems/kratki"
+    },
+    {
+      "task_id": "3182",
+      "url": "https://open.kattis.com/problems/pravokutni"
+    },
+    {
+      "task_id": "3183",
+      "url": "https://open.kattis.com/problems/mincostmaxflow"
+    },
+    {
+      "task_id": "3184",
+      "url": "https://open.kattis.com/problems/surveillance"
+    },
+    {
+      "task_id": "3185",
+      "url": "https://open.kattis.com/problems/inversefactorial"
+    },
+    {
+      "task_id": "3186",
+      "url": "https://open.kattis.com/problems/classicalcounting"
+    },
+    {
+      "task_id": "3187",
+      "url": "https://open.kattis.com/problems/gathering"
+    },
+    {
+      "task_id": "3188",
+      "url": "https://open.kattis.com/problems/svemir"
+    },
+    {
+      "task_id": "3189",
+      "url": "https://open.kattis.com/problems/apparatus"
+    },
+    {
+      "task_id": "3190",
+      "url": "https://open.kattis.com/problems/vudu"
+    },
+    {
+      "task_id": "3191",
+      "url": "https://open.kattis.com/problems/debugging"
+    },
+    {
+      "task_id": "3192",
+      "url": "https://open.kattis.com/problems/importspaghetti"
+    },
+    {
+      "task_id": "3193",
+      "url": "https://open.kattis.com/problems/slon"
+    },
+    {
+      "task_id": "3194",
+      "url": "https://open.kattis.com/problems/scenery"
+    },
+    {
+      "task_id": "3195",
+      "url": "https://open.kattis.com/problems/greenlight"
+    },
+    {
+      "task_id": "3196",
+      "url": "https://open.kattis.com/problems/bicikli"
+    },
+    {
+      "task_id": "3197",
+      "url": "https://open.kattis.com/problems/outing"
+    },
+    {
+      "task_id": "3198",
+      "url": "https://open.kattis.com/problems/typo"
+    },
+    {
+      "task_id": "3199",
+      "url": "https://open.kattis.com/problems/trezor"
+    },
+    {
+      "task_id": "3200",
+      "url": "https://open.kattis.com/problems/icar"
+    },
+    {
+      "task_id": "3201",
+      "url": "https://open.kattis.com/problems/podnizovi"
+    },
+    {
+      "task_id": "3202",
+      "url": "https://open.kattis.com/problems/zuma"
+    },
+    {
+      "task_id": "3203",
+      "url": "https://open.kattis.com/problems/bond"
+    },
+    {
+      "task_id": "3204",
+      "url": "https://open.kattis.com/problems/bridgeautomation"
+    },
+    {
+      "task_id": "3205",
+      "url": "https://open.kattis.com/problems/goingdutch"
+    },
+    {
+      "task_id": "3206",
+      "url": "https://open.kattis.com/problems/perfectskyline"
+    },
+    {
+      "task_id": "3207",
+      "url": "https://open.kattis.com/problems/endor"
+    },
+    {
+      "task_id": "3208",
+      "url": "https://open.kattis.com/problems/infiltration"
+    },
+    {
+      "task_id": "3209",
+      "url": "https://open.kattis.com/problems/traindelays"
+    },
+    {
+      "task_id": "3210",
+      "url": "https://open.kattis.com/problems/dotsboxes"
+    },
+    {
+      "task_id": "3211",
+      "url": "https://open.kattis.com/problems/winningthevote"
+    },
+    {
+      "task_id": "3212",
+      "url": "https://open.kattis.com/problems/snakes"
+    },
+    {
+      "task_id": "3213",
+      "url": "https://open.kattis.com/problems/bats"
+    },
+    {
+      "task_id": "3214",
+      "url": "https://open.kattis.com/problems/lostisclosetolose"
+    },
+    {
+      "task_id": "3215",
+      "url": "https://open.kattis.com/problems/shuffles"
+    },
+    {
+      "task_id": "3216",
+      "url": "https://open.kattis.com/problems/rationalratio"
+    },
+    {
+      "task_id": "3217",
+      "url": "https://open.kattis.com/problems/containment"
+    },
+    {
+      "task_id": "3218",
+      "url": "https://open.kattis.com/problems/hexagoncoloring"
+    },
+    {
+      "task_id": "3219",
+      "url": "https://open.kattis.com/problems/memory"
+    },
+    {
+      "task_id": "3220",
+      "url": "https://open.kattis.com/problems/wizarddance"
+    },
+    {
+      "task_id": "3221",
+      "url": "https://open.kattis.com/problems/gingercandy"
+    },
+    {
+      "task_id": "3222",
+      "url": "https://open.kattis.com/problems/sightseeing"
+    },
+    {
+      "task_id": "3223",
+      "url": "https://open.kattis.com/problems/forestconstruction"
+    },
+    {
+      "task_id": "3224",
+      "url": "https://open.kattis.com/problems/circumsphere"
+    },
+    {
+      "task_id": "3225",
+      "url": "https://open.kattis.com/problems/interviewqueue"
+    },
+    {
+      "task_id": "3226",
+      "url": "https://open.kattis.com/problems/speedyescape"
+    },
+    {
+      "task_id": "3227",
+      "url": "https://open.kattis.com/problems/restoran"
+    },
+    {
+      "task_id": "3228",
+      "url": "https://open.kattis.com/problems/gondolas"
+    },
+    {
+      "task_id": "3229",
+      "url": "https://open.kattis.com/problems/excludescoring"
+    },
+    {
+      "task_id": "3230",
+      "url": "https://open.kattis.com/problems/bakice"
+    },
+    {
+      "task_id": "3231",
+      "url": "https://open.kattis.com/problems/friends2"
+    },
+    {
+      "task_id": "3232",
+      "url": "https://open.kattis.com/problems/annorlundaanagram"
+    },
+    {
+      "task_id": "3233",
+      "url": "https://open.kattis.com/problems/eeriesubarrays"
+    },
+    {
+      "task_id": "3234",
+      "url": "https://open.kattis.com/problems/tightlypacked"
+    },
+    {
+      "task_id": "3235",
+      "url": "https://open.kattis.com/problems/iou"
+    },
+    {
+      "task_id": "3236",
+      "url": "https://open.kattis.com/problems/fibtour"
+    },
+    {
+      "task_id": "3237",
+      "url": "https://open.kattis.com/problems/maintenance"
+    },
+    {
+      "task_id": "3238",
+      "url": "https://open.kattis.com/problems/goldleaf"
+    },
+    {
+      "task_id": "3239",
+      "url": "https://open.kattis.com/problems/pokeball"
+    },
+    {
+      "task_id": "3240",
+      "url": "https://open.kattis.com/problems/binaryvoting"
+    },
+    {
+      "task_id": "3241",
+      "url": "https://open.kattis.com/problems/kolinje"
+    },
+    {
+      "task_id": "3242",
+      "url": "https://open.kattis.com/problems/pollygone"
+    },
+    {
+      "task_id": "3243",
+      "url": "https://open.kattis.com/problems/ispmerger"
+    },
+    {
+      "task_id": "3244",
+      "url": "https://open.kattis.com/problems/kemija"
+    },
+    {
+      "task_id": "3245",
+      "url": "https://open.kattis.com/problems/fish"
+    },
+    {
+      "task_id": "3246",
+      "url": "https://open.kattis.com/problems/obfuscation"
+    },
+    {
+      "task_id": "3247",
+      "url": "https://open.kattis.com/problems/knights"
+    },
+    {
+      "task_id": "3248",
+      "url": "https://open.kattis.com/problems/poplocavanje"
+    },
+    {
+      "task_id": "3249",
+      "url": "https://open.kattis.com/problems/buildboat"
+    },
+    {
+      "task_id": "3250",
+      "url": "https://open.kattis.com/problems/divideandconquer"
+    },
+    {
+      "task_id": "3251",
+      "url": "https://open.kattis.com/problems/poklon"
+    },
+    {
+      "task_id": "3252",
+      "url": "https://open.kattis.com/problems/greetings"
+    },
+    {
+      "task_id": "3253",
+      "url": "https://open.kattis.com/problems/presidentialelections"
+    },
+    {
+      "task_id": "3254",
+      "url": "https://open.kattis.com/problems/prosjek"
+    },
+    {
+      "task_id": "3255",
+      "url": "https://open.kattis.com/problems/hopper"
+    },
+    {
+      "task_id": "3256",
+      "url": "https://open.kattis.com/problems/bitwise"
+    },
+    {
+      "task_id": "3257",
+      "url": "https://open.kattis.com/problems/carpet"
+    },
+    {
+      "task_id": "3258",
+      "url": "https://open.kattis.com/problems/catandmice"
+    },
+    {
+      "task_id": "3259",
+      "url": "https://open.kattis.com/problems/aladin"
+    },
+    {
+      "task_id": "3260",
+      "url": "https://open.kattis.com/problems/drowningcombinatorist"
+    },
+    {
+      "task_id": "3261",
+      "url": "https://open.kattis.com/problems/jez"
+    },
+    {
+      "task_id": "3262",
+      "url": "https://open.kattis.com/problems/delivering"
+    },
+    {
+      "task_id": "3263",
+      "url": "https://open.kattis.com/problems/fakeit"
+    },
+    {
+      "task_id": "3264",
+      "url": "https://open.kattis.com/problems/parovi2"
+    },
+    {
+      "task_id": "3265",
+      "url": "https://open.kattis.com/problems/reseplanering"
+    },
+    {
+      "task_id": "3266",
+      "url": "https://open.kattis.com/problems/maxflow"
+    },
+    {
+      "task_id": "3267",
+      "url": "https://open.kattis.com/problems/kraljevi"
+    },
+    {
+      "task_id": "3268",
+      "url": "https://open.kattis.com/problems/enjoyingelderberries"
+    },
+    {
+      "task_id": "3269",
+      "url": "https://open.kattis.com/problems/parovi"
+    },
+    {
+      "task_id": "3270",
+      "url": "https://open.kattis.com/problems/wordladder2"
+    },
+    {
+      "task_id": "3271",
+      "url": "https://open.kattis.com/problems/zbrka"
+    },
+    {
+      "task_id": "3272",
+      "url": "https://open.kattis.com/problems/tombraider"
+    },
+    {
+      "task_id": "3273",
+      "url": "https://open.kattis.com/problems/loremipsum"
+    },
+    {
+      "task_id": "3274",
+      "url": "https://open.kattis.com/problems/friendlyfire"
+    },
+    {
+      "task_id": "3275",
+      "url": "https://open.kattis.com/problems/relativnost"
+    },
+    {
+      "task_id": "3276",
+      "url": "https://open.kattis.com/problems/board"
+    },
+    {
+      "task_id": "3277",
+      "url": "https://open.kattis.com/problems/smootharray"
+    },
+    {
+      "task_id": "3278",
+      "url": "https://open.kattis.com/problems/leapfrog"
+    },
+    {
+      "task_id": "3279",
+      "url": "https://open.kattis.com/problems/barcode2"
+    },
+    {
+      "task_id": "3280",
+      "url": "https://open.kattis.com/problems/entertainmentbox"
+    },
+    {
+      "task_id": "3281",
+      "url": "https://open.kattis.com/problems/ecodriving"
+    },
+    {
+      "task_id": "3282",
+      "url": "https://open.kattis.com/problems/freedesserts"
+    },
+    {
+      "task_id": "3283",
+      "url": "https://open.kattis.com/problems/gemisland"
+    },
+    {
+      "task_id": "3284",
+      "url": "https://open.kattis.com/problems/coprimeintegers"
+    },
+    {
+      "task_id": "3285",
+      "url": "https://open.kattis.com/problems/difference"
+    },
+    {
+      "task_id": "3286",
+      "url": "https://open.kattis.com/problems/speakingofwhich"
+    },
+    {
+      "task_id": "3287",
+      "url": "https://open.kattis.com/problems/logland"
+    },
+    {
+      "task_id": "3288",
+      "url": "https://open.kattis.com/problems/idf"
+    },
+    {
+      "task_id": "3289",
+      "url": "https://open.kattis.com/problems/spin"
+    },
+    {
+      "task_id": "3290",
+      "url": "https://open.kattis.com/problems/explodingkittens"
+    },
+    {
+      "task_id": "3291",
+      "url": "https://open.kattis.com/problems/conveyorbelts2"
+    },
+    {
+      "task_id": "3292",
+      "url": "https://open.kattis.com/problems/herkabe"
+    },
+    {
+      "task_id": "3293",
+      "url": "https://open.kattis.com/problems/vending"
+    },
+    {
+      "task_id": "3294",
+      "url": "https://open.kattis.com/problems/slantdrilling"
+    },
+    {
+      "task_id": "3295",
+      "url": "https://open.kattis.com/problems/prosti"
+    },
+    {
+      "task_id": "3296",
+      "url": "https://open.kattis.com/problems/codepermutations"
+    },
+    {
+      "task_id": "3297",
+      "url": "https://open.kattis.com/problems/sendmoremoney"
+    },
+    {
+      "task_id": "3298",
+      "url": "https://open.kattis.com/problems/entirelyunsortedsequences"
+    },
+    {
+      "task_id": "3299",
+      "url": "https://open.kattis.com/problems/checkerboard"
+    },
+    {
+      "task_id": "3300",
+      "url": "https://open.kattis.com/problems/cheetahs"
+    },
+    {
+      "task_id": "3301",
+      "url": "https://open.kattis.com/problems/moneytransfers"
+    },
+    {
+      "task_id": "3302",
+      "url": "https://open.kattis.com/problems/colorcodes"
+    },
+    {
+      "task_id": "3303",
+      "url": "https://open.kattis.com/problems/keepcalmandcarryoff"
+    },
+    {
+      "task_id": "3304",
+      "url": "https://open.kattis.com/problems/kralj"
+    },
+    {
+      "task_id": "3305",
+      "url": "https://open.kattis.com/problems/bonafide"
+    },
+    {
+      "task_id": "3306",
+      "url": "https://open.kattis.com/problems/razgovori"
+    },
+    {
+      "task_id": "3307",
+      "url": "https://open.kattis.com/problems/landinheritance"
+    },
+    {
+      "task_id": "3308",
+      "url": "https://open.kattis.com/problems/artappreciation"
+    },
+    {
+      "task_id": "3309",
+      "url": "https://open.kattis.com/problems/equestriagames"
+    },
+    {
+      "task_id": "3310",
+      "url": "https://open.kattis.com/problems/englishrestaurant"
+    },
+    {
+      "task_id": "3311",
+      "url": "https://open.kattis.com/problems/exponial"
+    },
+    {
+      "task_id": "3312",
+      "url": "https://open.kattis.com/problems/johnny5"
+    },
+    {
+      "task_id": "3313",
+      "url": "https://open.kattis.com/problems/racinggems"
+    },
+    {
+      "task_id": "3314",
+      "url": "https://open.kattis.com/problems/letterwheels"
+    },
+    {
+      "task_id": "3315",
+      "url": "https://open.kattis.com/problems/savez"
+    },
+    {
+      "task_id": "3316",
+      "url": "https://open.kattis.com/problems/lottery"
+    },
+    {
+      "task_id": "3317",
+      "url": "https://open.kattis.com/problems/automatictrading"
+    },
+    {
+      "task_id": "3318",
+      "url": "https://open.kattis.com/problems/catinatree"
+    },
+    {
+      "task_id": "3319",
+      "url": "https://open.kattis.com/problems/solarly"
+    },
+    {
+      "task_id": "3320",
+      "url": "https://open.kattis.com/problems/magicaldistances"
+    },
+    {
+      "task_id": "3321",
+      "url": "https://open.kattis.com/problems/zabe"
+    },
+    {
+      "task_id": "3322",
+      "url": "https://open.kattis.com/problems/antiques"
+    },
+    {
+      "task_id": "3323",
+      "url": "https://open.kattis.com/problems/juice2"
+    },
+    {
+      "task_id": "3324",
+      "url": "https://open.kattis.com/problems/stoichiometry"
+    },
+    {
+      "task_id": "3325",
+      "url": "https://open.kattis.com/problems/tank"
+    },
+    {
+      "task_id": "3326",
+      "url": "https://open.kattis.com/problems/monotony"
+    },
+    {
+      "task_id": "3327",
+      "url": "https://open.kattis.com/problems/enigma"
+    },
+    {
+      "task_id": "3328",
+      "url": "https://open.kattis.com/problems/domino"
+    },
+    {
+      "task_id": "3329",
+      "url": "https://open.kattis.com/problems/circle"
+    },
+    {
+      "task_id": "3330",
+      "url": "https://open.kattis.com/problems/krumpirko"
+    },
+    {
+      "task_id": "3331",
+      "url": "https://open.kattis.com/problems/ambush"
+    },
+    {
+      "task_id": "3332",
+      "url": "https://open.kattis.com/problems/chemicalsmonitoring"
+    },
+    {
+      "task_id": "3333",
+      "url": "https://open.kattis.com/problems/hidingchickens"
+    },
+    {
+      "task_id": "3334",
+      "url": "https://open.kattis.com/problems/optimistan"
+    },
+    {
+      "task_id": "3335",
+      "url": "https://open.kattis.com/problems/moretriangles"
+    },
+    {
+      "task_id": "3336",
+      "url": "https://open.kattis.com/problems/guardianofdecency"
+    },
+    {
+      "task_id": "3337",
+      "url": "https://open.kattis.com/problems/stogovi"
+    },
+    {
+      "task_id": "3338",
+      "url": "https://open.kattis.com/problems/arcaeapartners"
+    },
+    {
+      "task_id": "3339",
+      "url": "https://open.kattis.com/problems/evenland"
+    },
+    {
+      "task_id": "3340",
+      "url": "https://open.kattis.com/problems/flight"
+    },
+    {
+      "task_id": "3341",
+      "url": "https://open.kattis.com/problems/money"
+    },
+    {
+      "task_id": "3342",
+      "url": "https://open.kattis.com/problems/fancy"
+    },
+    {
+      "task_id": "3343",
+      "url": "https://open.kattis.com/problems/thewireghost"
+    },
+    {
+      "task_id": "3344",
+      "url": "https://open.kattis.com/problems/luggage"
+    },
+    {
+      "task_id": "3345",
+      "url": "https://open.kattis.com/problems/dogs"
+    },
+    {
+      "task_id": "3346",
+      "url": "https://open.kattis.com/problems/roadwork"
+    },
+    {
+      "task_id": "3347",
+      "url": "https://open.kattis.com/problems/atlantis"
+    },
+    {
+      "task_id": "3348",
+      "url": "https://open.kattis.com/problems/bonbons"
+    },
+    {
+      "task_id": "3349",
+      "url": "https://open.kattis.com/problems/nvwls"
+    },
+    {
+      "task_id": "3350",
+      "url": "https://open.kattis.com/problems/castingspells"
+    },
+    {
+      "task_id": "3351",
+      "url": "https://open.kattis.com/problems/sequentialyahtzee"
+    },
+    {
+      "task_id": "3352",
+      "url": "https://open.kattis.com/problems/magicallights"
+    },
+    {
+      "task_id": "3353",
+      "url": "https://open.kattis.com/problems/ragingriver"
+    },
+    {
+      "task_id": "3354",
+      "url": "https://open.kattis.com/problems/cucumberconundrum"
+    },
+    {
+      "task_id": "3355",
+      "url": "https://open.kattis.com/problems/race"
+    },
+    {
+      "task_id": "3356",
+      "url": "https://open.kattis.com/problems/krtica"
+    },
+    {
+      "task_id": "3357",
+      "url": "https://open.kattis.com/problems/sunlight"
+    },
+    {
+      "task_id": "3358",
+      "url": "https://open.kattis.com/problems/compiler"
+    },
+    {
+      "task_id": "3359",
+      "url": "https://open.kattis.com/problems/telescope"
+    },
+    {
+      "task_id": "3360",
+      "url": "https://open.kattis.com/problems/outofcontext"
+    },
+    {
+      "task_id": "3361",
+      "url": "https://open.kattis.com/problems/metal"
+    },
+    {
+      "task_id": "3362",
+      "url": "https://open.kattis.com/problems/lava"
+    },
+    {
+      "task_id": "3363",
+      "url": "https://open.kattis.com/problems/ingestion"
+    },
+    {
+      "task_id": "3364",
+      "url": "https://open.kattis.com/problems/unionfind"
+    },
+    {
+      "task_id": "3365",
+      "url": "https://open.kattis.com/problems/primal"
+    },
+    {
+      "task_id": "3366",
+      "url": "https://open.kattis.com/problems/evenodd"
+    },
+    {
+      "task_id": "3367",
+      "url": "https://open.kattis.com/problems/justaquiz"
+    },
+    {
+      "task_id": "3368",
+      "url": "https://open.kattis.com/problems/grandopening"
+    },
+    {
+      "task_id": "3369",
+      "url": "https://open.kattis.com/problems/randomproblem"
+    },
+    {
+      "task_id": "3370",
+      "url": "https://open.kattis.com/problems/skysthelimit"
+    },
+    {
+      "task_id": "3371",
+      "url": "https://open.kattis.com/problems/dinner"
+    },
+    {
+      "task_id": "3372",
+      "url": "https://open.kattis.com/problems/flightplans"
+    },
+    {
+      "task_id": "3373",
+      "url": "https://open.kattis.com/problems/piecesofparentheses"
+    },
+    {
+      "task_id": "3374",
+      "url": "https://open.kattis.com/problems/unterwavedistance"
+    },
+    {
+      "task_id": "3375",
+      "url": "https://open.kattis.com/problems/unicycliccount"
+    },
+    {
+      "task_id": "3376",
+      "url": "https://open.kattis.com/problems/gottanudge"
+    },
+    {
+      "task_id": "3377",
+      "url": "https://open.kattis.com/problems/climbing"
+    },
+    {
+      "task_id": "3378",
+      "url": "https://open.kattis.com/problems/jazzjourney"
+    },
+    {
+      "task_id": "3379",
+      "url": "https://open.kattis.com/problems/thewrathofkahn"
+    },
+    {
+      "task_id": "3380",
+      "url": "https://open.kattis.com/problems/absurdistan2"
+    },
+    {
+      "task_id": "3381",
+      "url": "https://open.kattis.com/problems/convex"
+    },
+    {
+      "task_id": "3382",
+      "url": "https://open.kattis.com/problems/twentyfour"
+    },
+    {
+      "task_id": "3383",
+      "url": "https://open.kattis.com/problems/icecream"
+    },
+    {
+      "task_id": "3384",
+      "url": "https://open.kattis.com/problems/zgodan"
+    },
+    {
+      "task_id": "3385",
+      "url": "https://open.kattis.com/problems/dancecircle"
+    },
+    {
+      "task_id": "3386",
+      "url": "https://open.kattis.com/problems/specialtour"
+    },
+    {
+      "task_id": "3387",
+      "url": "https://open.kattis.com/problems/fairbandwidthsharing"
+    },
+    {
+      "task_id": "3388",
+      "url": "https://open.kattis.com/problems/jinxedbetting"
+    },
+    {
+      "task_id": "3389",
+      "url": "https://open.kattis.com/problems/watchlater"
+    },
+    {
+      "task_id": "3390",
+      "url": "https://open.kattis.com/problems/britishmenu"
+    },
+    {
+      "task_id": "3391",
+      "url": "https://open.kattis.com/problems/zoninghouses"
+    },
+    {
+      "task_id": "3392",
+      "url": "https://open.kattis.com/problems/suma"
+    },
+    {
+      "task_id": "3393",
+      "url": "https://open.kattis.com/problems/courseplanning"
+    },
+    {
+      "task_id": "3394",
+      "url": "https://open.kattis.com/problems/deliverydelays"
+    },
+    {
+      "task_id": "3395",
+      "url": "https://open.kattis.com/problems/ironcoal"
+    },
+    {
+      "task_id": "3396",
+      "url": "https://open.kattis.com/problems/goatropes"
+    },
+    {
+      "task_id": "3397",
+      "url": "https://open.kattis.com/problems/dogtrouble"
+    },
+    {
+      "task_id": "3398",
+      "url": "https://open.kattis.com/problems/deletethis"
+    },
+    {
+      "task_id": "3399",
+      "url": "https://open.kattis.com/problems/languagesurvey"
+    },
+    {
+      "task_id": "3400",
+      "url": "https://open.kattis.com/problems/whiterabbit"
+    },
+    {
+      "task_id": "3401",
+      "url": "https://open.kattis.com/problems/aqueducts"
+    },
+    {
+      "task_id": "3402",
+      "url": "https://open.kattis.com/problems/prolongedpassword"
+    },
+    {
+      "task_id": "3403",
+      "url": "https://open.kattis.com/problems/baza"
+    },
+    {
+      "task_id": "3404",
+      "url": "https://open.kattis.com/problems/aliencodebreaking"
+    },
+    {
+      "task_id": "3405",
+      "url": "https://open.kattis.com/problems/trick"
+    },
+    {
+      "task_id": "3406",
+      "url": "https://open.kattis.com/problems/parade"
+    },
+    {
+      "task_id": "3407",
+      "url": "https://open.kattis.com/problems/circuitdesign"
+    },
+    {
+      "task_id": "3408",
+      "url": "https://open.kattis.com/problems/oop"
+    },
+    {
+      "task_id": "3409",
+      "url": "https://open.kattis.com/problems/busyboard"
+    },
+    {
+      "task_id": "3410",
+      "url": "https://open.kattis.com/problems/oldschooldays"
+    },
+    {
+      "task_id": "3411",
+      "url": "https://open.kattis.com/problems/jackdawsandcrows"
+    },
+    {
+      "task_id": "3412",
+      "url": "https://open.kattis.com/problems/bikingduck"
+    },
+    {
+      "task_id": "3413",
+      "url": "https://open.kattis.com/problems/diplomacy"
+    },
+    {
+      "task_id": "3414",
+      "url": "https://open.kattis.com/problems/aroundthetrack2"
+    },
+    {
+      "task_id": "3415",
+      "url": "https://open.kattis.com/problems/jogurt"
+    },
+    {
+      "task_id": "3416",
+      "url": "https://open.kattis.com/problems/planestrainsbutnotautomobiles"
+    },
+    {
+      "task_id": "3417",
+      "url": "https://open.kattis.com/problems/inquiryii"
+    },
+    {
+      "task_id": "3418",
+      "url": "https://open.kattis.com/problems/luckynumber"
+    },
+    {
+      "task_id": "3419",
+      "url": "https://open.kattis.com/problems/licenserenewal"
+    },
+    {
+      "task_id": "3420",
+      "url": "https://open.kattis.com/problems/bookcircle"
+    },
+    {
+      "task_id": "3421",
+      "url": "https://open.kattis.com/problems/spam"
+    },
+    {
+      "task_id": "3422",
+      "url": "https://open.kattis.com/problems/buriedtreasure"
+    },
+    {
+      "task_id": "3423",
+      "url": "https://open.kattis.com/problems/managingpackaging"
+    },
+    {
+      "task_id": "3424",
+      "url": "https://open.kattis.com/problems/foreveryoung"
+    },
+    {
+      "task_id": "3425",
+      "url": "https://open.kattis.com/problems/tripletfreequeens"
+    },
+    {
+      "task_id": "3426",
+      "url": "https://open.kattis.com/problems/subwaymap"
+    },
+    {
+      "task_id": "3427",
+      "url": "https://open.kattis.com/problems/lockblocked"
+    },
+    {
+      "task_id": "3428",
+      "url": "https://open.kattis.com/problems/collatzconjecture"
+    },
+    {
+      "task_id": "3429",
+      "url": "https://open.kattis.com/problems/pubnite"
+    },
+    {
+      "task_id": "3430",
+      "url": "https://open.kattis.com/problems/joiningnetwork"
+    },
+    {
+      "task_id": "3431",
+      "url": "https://open.kattis.com/problems/gridmst"
+    },
+    {
+      "task_id": "3432",
+      "url": "https://open.kattis.com/problems/mali"
+    },
+    {
+      "task_id": "3433",
+      "url": "https://open.kattis.com/problems/fire3"
+    },
+    {
+      "task_id": "3434",
+      "url": "https://open.kattis.com/problems/explosion"
+    },
+    {
+      "task_id": "3435",
+      "url": "https://open.kattis.com/problems/insidersidentity"
+    },
+    {
+      "task_id": "3436",
+      "url": "https://open.kattis.com/problems/infinite2darray"
+    },
+    {
+      "task_id": "3437",
+      "url": "https://open.kattis.com/problems/vacuum"
+    },
+    {
+      "task_id": "3438",
+      "url": "https://open.kattis.com/problems/caching"
+    },
+    {
+      "task_id": "3439",
+      "url": "https://open.kattis.com/problems/emptyingbaltic"
+    },
+    {
+      "task_id": "3440",
+      "url": "https://open.kattis.com/problems/foodreview"
+    },
+    {
+      "task_id": "3441",
+      "url": "https://open.kattis.com/problems/roundtrips"
+    },
+    {
+      "task_id": "3442",
+      "url": "https://open.kattis.com/problems/sheldon"
+    },
+    {
+      "task_id": "3443",
+      "url": "https://open.kattis.com/problems/symmetry"
+    },
+    {
+      "task_id": "3444",
+      "url": "https://open.kattis.com/problems/dangerousskiing"
+    },
+    {
+      "task_id": "3445",
+      "url": "https://open.kattis.com/problems/collusionontwowheels"
+    },
+    {
+      "task_id": "3446",
+      "url": "https://open.kattis.com/problems/assemblyline"
+    },
+    {
+      "task_id": "3447",
+      "url": "https://open.kattis.com/problems/sms"
+    },
+    {
+      "task_id": "3448",
+      "url": "https://open.kattis.com/problems/cablecar"
+    },
+    {
+      "task_id": "3449",
+      "url": "https://open.kattis.com/problems/darkness"
+    },
+    {
+      "task_id": "3450",
+      "url": "https://open.kattis.com/problems/threedigits"
+    },
+    {
+      "task_id": "3451",
+      "url": "https://open.kattis.com/problems/unbalancedparentheses"
+    },
+    {
+      "task_id": "3452",
+      "url": "https://open.kattis.com/problems/maze"
+    },
+    {
+      "task_id": "3453",
+      "url": "https://open.kattis.com/problems/gauntletoffire"
+    },
+    {
+      "task_id": "3454",
+      "url": "https://open.kattis.com/problems/howtopaint"
+    },
+    {
+      "task_id": "3455",
+      "url": "https://open.kattis.com/problems/laneswitching"
+    },
+    {
+      "task_id": "3456",
+      "url": "https://open.kattis.com/problems/woodencrates"
+    },
+    {
+      "task_id": "3457",
+      "url": "https://open.kattis.com/problems/hopscotch"
+    },
+    {
+      "task_id": "3458",
+      "url": "https://open.kattis.com/problems/xormax"
+    },
+    {
+      "task_id": "3459",
+      "url": "https://open.kattis.com/problems/councilling"
+    },
+    {
+      "task_id": "3460",
+      "url": "https://open.kattis.com/problems/canofworms"
+    },
+    {
+      "task_id": "3461",
+      "url": "https://open.kattis.com/problems/politics"
+    },
+    {
+      "task_id": "3462",
+      "url": "https://open.kattis.com/problems/ls"
+    },
+    {
+      "task_id": "3463",
+      "url": "https://open.kattis.com/problems/anthony"
+    },
+    {
+      "task_id": "3464",
+      "url": "https://open.kattis.com/problems/bettor"
+    },
+    {
+      "task_id": "3465",
+      "url": "https://open.kattis.com/problems/absurdistan3"
+    },
+    {
+      "task_id": "3466",
+      "url": "https://open.kattis.com/problems/balanceddiet2"
+    },
+    {
+      "task_id": "3467",
+      "url": "https://open.kattis.com/problems/arrivingontime"
+    },
+    {
+      "task_id": "3468",
+      "url": "https://open.kattis.com/problems/installingapps"
+    },
+    {
+      "task_id": "3469",
+      "url": "https://open.kattis.com/problems/easyprobability"
+    },
+    {
+      "task_id": "3470",
+      "url": "https://open.kattis.com/problems/minrojikvadrat"
+    },
+    {
+      "task_id": "3471",
+      "url": "https://open.kattis.com/problems/ozljeda"
+    },
+    {
+      "task_id": "3472",
+      "url": "https://open.kattis.com/problems/galactic"
+    },
+    {
+      "task_id": "3473",
+      "url": "https://open.kattis.com/problems/contestscheduling"
+    },
+    {
+      "task_id": "3474",
+      "url": "https://open.kattis.com/problems/sneakattack"
+    },
+    {
+      "task_id": "3475",
+      "url": "https://open.kattis.com/problems/callacab"
+    },
+    {
+      "task_id": "3476",
+      "url": "https://open.kattis.com/problems/chuck"
+    },
+    {
+      "task_id": "3477",
+      "url": "https://open.kattis.com/problems/spectrum"
+    },
+    {
+      "task_id": "3478",
+      "url": "https://open.kattis.com/problems/sevenkingdoms"
+    },
+    {
+      "task_id": "3479",
+      "url": "https://open.kattis.com/problems/convoy"
+    },
+    {
+      "task_id": "3480",
+      "url": "https://open.kattis.com/problems/around"
+    },
+    {
+      "task_id": "3481",
+      "url": "https://open.kattis.com/problems/djgigs"
+    },
+    {
+      "task_id": "3482",
+      "url": "https://open.kattis.com/problems/transitcard"
+    },
+    {
+      "task_id": "3483",
+      "url": "https://open.kattis.com/problems/figurinefigures"
+    },
+    {
+      "task_id": "3484",
+      "url": "https://open.kattis.com/problems/superdoku"
+    },
+    {
+      "task_id": "3485",
+      "url": "https://open.kattis.com/problems/stopcounting"
+    },
+    {
+      "task_id": "3486",
+      "url": "https://open.kattis.com/problems/stretchingstreamers"
+    },
+    {
+      "task_id": "3487",
+      "url": "https://open.kattis.com/problems/sonofpipestream"
+    },
+    {
+      "task_id": "3488",
+      "url": "https://open.kattis.com/problems/forestofcelery"
+    },
+    {
+      "task_id": "3489",
+      "url": "https://open.kattis.com/problems/kingpinescape"
+    },
+    {
+      "task_id": "3490",
+      "url": "https://open.kattis.com/problems/witchdance"
+    },
+    {
+      "task_id": "3491",
+      "url": "https://open.kattis.com/problems/hogwarts"
+    },
+    {
+      "task_id": "3492",
+      "url": "https://open.kattis.com/problems/transportation"
+    },
+    {
+      "task_id": "3493",
+      "url": "https://open.kattis.com/problems/science"
+    },
+    {
+      "task_id": "3494",
+      "url": "https://open.kattis.com/problems/jabuke2"
+    },
+    {
+      "task_id": "3495",
+      "url": "https://open.kattis.com/problems/withinarmsreach"
+    },
+    {
+      "task_id": "3496",
+      "url": "https://open.kattis.com/problems/atomicenergy"
+    },
+    {
+      "task_id": "3497",
+      "url": "https://open.kattis.com/problems/theescape"
+    },
+    {
+      "task_id": "3498",
+      "url": "https://open.kattis.com/problems/mars"
+    },
+    {
+      "task_id": "3499",
+      "url": "https://open.kattis.com/problems/makingpalindromes"
+    },
+    {
+      "task_id": "3500",
+      "url": "https://open.kattis.com/problems/bingoties"
+    },
+    {
+      "task_id": "3501",
+      "url": "https://open.kattis.com/problems/camels"
+    },
+    {
+      "task_id": "3502",
+      "url": "https://open.kattis.com/problems/trafficblights"
+    },
+    {
+      "task_id": "3503",
+      "url": "https://open.kattis.com/problems/elementarymath"
+    },
+    {
+      "task_id": "3504",
+      "url": "https://open.kattis.com/problems/antimatterrain"
+    },
+    {
+      "task_id": "3505",
+      "url": "https://open.kattis.com/problems/aplusb"
+    },
+    {
+      "task_id": "3506",
+      "url": "https://open.kattis.com/problems/cheergame"
+    },
+    {
+      "task_id": "3507",
+      "url": "https://open.kattis.com/problems/arrangingwine"
+    },
+    {
+      "task_id": "3508",
+      "url": "https://open.kattis.com/problems/jattenfinn"
+    },
+    {
+      "task_id": "3509",
+      "url": "https://open.kattis.com/problems/datepickup"
+    },
+    {
+      "task_id": "3510",
+      "url": "https://open.kattis.com/problems/game"
+    },
+    {
+      "task_id": "3511",
+      "url": "https://open.kattis.com/problems/adventurebegins"
+    },
+    {
+      "task_id": "3512",
+      "url": "https://open.kattis.com/problems/putnik"
+    },
+    {
+      "task_id": "3513",
+      "url": "https://open.kattis.com/problems/listgame2"
+    },
+    {
+      "task_id": "3514",
+      "url": "https://open.kattis.com/problems/mayhem"
+    },
+    {
+      "task_id": "3515",
+      "url": "https://open.kattis.com/problems/buenosairlines"
+    },
+    {
+      "task_id": "3516",
+      "url": "https://open.kattis.com/problems/fastestspeedrun"
+    },
+    {
+      "task_id": "3517",
+      "url": "https://open.kattis.com/problems/baas"
+    },
+    {
+      "task_id": "3518",
+      "url": "https://open.kattis.com/problems/globalwarming"
+    },
+    {
+      "task_id": "3519",
+      "url": "https://open.kattis.com/problems/memory2"
+    },
+    {
+      "task_id": "3520",
+      "url": "https://open.kattis.com/problems/longestlife"
+    },
+    {
+      "task_id": "3521",
+      "url": "https://open.kattis.com/problems/solarenergy"
+    },
+    {
+      "task_id": "3522",
+      "url": "https://open.kattis.com/problems/low"
+    },
+    {
+      "task_id": "3523",
+      "url": "https://open.kattis.com/problems/ridofcoins"
+    },
+    {
+      "task_id": "3524",
+      "url": "https://open.kattis.com/problems/homework"
+    },
+    {
+      "task_id": "3525",
+      "url": "https://open.kattis.com/problems/securitybadge"
+    },
+    {
+      "task_id": "3526",
+      "url": "https://open.kattis.com/problems/truefalseworksheet"
+    },
+    {
+      "task_id": "3527",
+      "url": "https://open.kattis.com/problems/adjoin"
+    },
+    {
+      "task_id": "3528",
+      "url": "https://open.kattis.com/problems/cavli"
+    },
+    {
+      "task_id": "3529",
+      "url": "https://open.kattis.com/problems/redbluetree"
+    },
+    {
+      "task_id": "3530",
+      "url": "https://open.kattis.com/problems/rollercoasterfun"
+    },
+    {
+      "task_id": "3531",
+      "url": "https://open.kattis.com/problems/blazingnewtrails"
+    },
+    {
+      "task_id": "3532",
+      "url": "https://open.kattis.com/problems/eksplozija"
+    },
+    {
+      "task_id": "3533",
+      "url": "https://open.kattis.com/problems/cestarine"
+    },
+    {
+      "task_id": "3534",
+      "url": "https://open.kattis.com/problems/pianino"
+    },
+    {
+      "task_id": "3535",
+      "url": "https://open.kattis.com/problems/plusminus"
+    },
+    {
+      "task_id": "3536",
+      "url": "https://open.kattis.com/problems/heapsoffun"
+    },
+    {
+      "task_id": "3537",
+      "url": "https://open.kattis.com/problems/avoidingairports"
+    },
+    {
+      "task_id": "3538",
+      "url": "https://open.kattis.com/problems/altruisticamphibians"
+    },
+    {
+      "task_id": "3539",
+      "url": "https://open.kattis.com/problems/bipartitebattle"
+    },
+    {
+      "task_id": "3540",
+      "url": "https://open.kattis.com/problems/rubiksrevenge"
+    },
+    {
+      "task_id": "3541",
+      "url": "https://open.kattis.com/problems/halloweenloot"
+    },
+    {
+      "task_id": "3542",
+      "url": "https://open.kattis.com/problems/connect"
+    },
+    {
+      "task_id": "3543",
+      "url": "https://open.kattis.com/problems/autocorrect"
+    },
+    {
+      "task_id": "3544",
+      "url": "https://open.kattis.com/problems/privatespace"
+    },
+    {
+      "task_id": "3545",
+      "url": "https://open.kattis.com/problems/tree"
+    },
+    {
+      "task_id": "3546",
+      "url": "https://open.kattis.com/problems/journalediting"
+    },
+    {
+      "task_id": "3547",
+      "url": "https://open.kattis.com/problems/unrealestate"
+    },
+    {
+      "task_id": "3548",
+      "url": "https://open.kattis.com/problems/mixingdrinks"
+    },
+    {
+      "task_id": "3549",
+      "url": "https://open.kattis.com/problems/radar"
+    },
+    {
+      "task_id": "3550",
+      "url": "https://open.kattis.com/problems/learningtocode"
+    },
+    {
+      "task_id": "3551",
+      "url": "https://open.kattis.com/problems/dryicecream"
+    },
+    {
+      "task_id": "3552",
+      "url": "https://open.kattis.com/problems/gameofgnomes"
+    },
+    {
+      "task_id": "3553",
+      "url": "https://open.kattis.com/problems/nekameleoni"
+    },
+    {
+      "task_id": "3554",
+      "url": "https://open.kattis.com/problems/monkey"
+    },
+    {
+      "task_id": "3555",
+      "url": "https://open.kattis.com/problems/barktree"
+    },
+    {
+      "task_id": "3556",
+      "url": "https://open.kattis.com/problems/whostheboss"
+    },
+    {
+      "task_id": "3557",
+      "url": "https://open.kattis.com/problems/killingchaos"
+    },
+    {
+      "task_id": "3558",
+      "url": "https://open.kattis.com/problems/odasiljaci"
+    },
+    {
+      "task_id": "3559",
+      "url": "https://open.kattis.com/problems/zergrush"
+    },
+    {
+      "task_id": "3560",
+      "url": "https://open.kattis.com/problems/divljak"
+    },
+    {
+      "task_id": "3561",
+      "url": "https://open.kattis.com/problems/otherside"
+    },
+    {
+      "task_id": "3562",
+      "url": "https://open.kattis.com/problems/studying"
+    },
+    {
+      "task_id": "3563",
+      "url": "https://open.kattis.com/problems/coverup"
+    },
+    {
+      "task_id": "3564",
+      "url": "https://open.kattis.com/problems/islands2"
+    },
+    {
+      "task_id": "3565",
+      "url": "https://open.kattis.com/problems/tickettoride"
+    },
+    {
+      "task_id": "3566",
+      "url": "https://open.kattis.com/problems/dailydivision"
+    },
+    {
+      "task_id": "3567",
+      "url": "https://open.kattis.com/problems/distinctivecharacter"
+    },
+    {
+      "task_id": "3568",
+      "url": "https://open.kattis.com/problems/floppy"
+    },
+    {
+      "task_id": "3569",
+      "url": "https://open.kattis.com/problems/strikercount"
+    },
+    {
+      "task_id": "3570",
+      "url": "https://open.kattis.com/problems/dream"
+    },
+    {
+      "task_id": "3571",
+      "url": "https://open.kattis.com/problems/elderscrollbar"
+    },
+    {
+      "task_id": "3572",
+      "url": "https://open.kattis.com/problems/indoorienteering"
+    },
+    {
+      "task_id": "3573",
+      "url": "https://open.kattis.com/problems/dinnerbet"
+    },
+    {
+      "task_id": "3574",
+      "url": "https://open.kattis.com/problems/prokletnik"
+    },
+    {
+      "task_id": "3575",
+      "url": "https://open.kattis.com/problems/letsmeet"
+    },
+    {
+      "task_id": "3576",
+      "url": "https://open.kattis.com/problems/habeascorpus"
+    },
+    {
+      "task_id": "3577",
+      "url": "https://open.kattis.com/problems/cvjetici"
+    },
+    {
+      "task_id": "3578",
+      "url": "https://open.kattis.com/problems/foodreviewhard"
+    },
+    {
+      "task_id": "3579",
+      "url": "https://open.kattis.com/problems/statisticians"
+    },
+    {
+      "task_id": "3580",
+      "url": "https://open.kattis.com/problems/maximalsequences"
+    },
+    {
+      "task_id": "3581",
+      "url": "https://open.kattis.com/problems/arcade"
+    },
+    {
+      "task_id": "3582",
+      "url": "https://open.kattis.com/problems/gaggle"
+    },
+    {
+      "task_id": "3583",
+      "url": "https://open.kattis.com/problems/kingdomofhamsters"
+    },
+    {
+      "task_id": "3584",
+      "url": "https://open.kattis.com/problems/fancyeasy"
+    },
+    {
+      "task_id": "3585",
+      "url": "https://open.kattis.com/problems/anothercoinweighingpuzzle"
+    },
+    {
+      "task_id": "3586",
+      "url": "https://open.kattis.com/problems/sumsets"
+    },
+    {
+      "task_id": "3587",
+      "url": "https://open.kattis.com/problems/taboo"
+    },
+    {
+      "task_id": "3588",
+      "url": "https://open.kattis.com/problems/trackingshares"
+    },
+    {
+      "task_id": "3589",
+      "url": "https://open.kattis.com/problems/produktsiffra"
+    },
+    {
+      "task_id": "3590",
+      "url": "https://open.kattis.com/problems/cutitout"
+    },
+    {
+      "task_id": "3591",
+      "url": "https://open.kattis.com/problems/findmyfamily"
+    },
+    {
+      "task_id": "3592",
+      "url": "https://open.kattis.com/problems/soyoulikeyourfoodhot"
+    },
+    {
+      "task_id": "3593",
+      "url": "https://open.kattis.com/problems/domine"
+    },
+    {
+      "task_id": "3594",
+      "url": "https://open.kattis.com/problems/primetime"
+    },
+    {
+      "task_id": "3595",
+      "url": "https://open.kattis.com/problems/firingphaser"
+    },
+    {
+      "task_id": "3596",
+      "url": "https://open.kattis.com/problems/associationofmyths"
+    },
+    {
+      "task_id": "3597",
+      "url": "https://open.kattis.com/problems/trickshot"
+    },
+    {
+      "task_id": "3598",
+      "url": "https://open.kattis.com/problems/cheaperdrink"
+    },
+    {
+      "task_id": "3599",
+      "url": "https://open.kattis.com/problems/muzicari"
+    },
+    {
+      "task_id": "3600",
+      "url": "https://open.kattis.com/problems/basincity"
+    },
+    {
+      "task_id": "3601",
+      "url": "https://open.kattis.com/problems/messenger"
+    },
+    {
+      "task_id": "3602",
+      "url": "https://open.kattis.com/problems/illumination"
+    },
+    {
+      "task_id": "3603",
+      "url": "https://open.kattis.com/problems/translatorsdinner"
+    },
+    {
+      "task_id": "3604",
+      "url": "https://open.kattis.com/problems/sensor"
+    },
+    {
+      "task_id": "3605",
+      "url": "https://open.kattis.com/problems/treeshopping"
+    },
+    {
+      "task_id": "3606",
+      "url": "https://open.kattis.com/problems/princeza"
+    },
+    {
+      "task_id": "3607",
+      "url": "https://open.kattis.com/problems/basicinterpreter"
+    },
+    {
+      "task_id": "3608",
+      "url": "https://open.kattis.com/problems/honi"
+    },
+    {
+      "task_id": "3609",
+      "url": "https://open.kattis.com/problems/treehugging"
+    },
+    {
+      "task_id": "3610",
+      "url": "https://open.kattis.com/problems/bilateral"
+    },
+    {
+      "task_id": "3611",
+      "url": "https://open.kattis.com/problems/intercept"
+    },
+    {
+      "task_id": "3612",
+      "url": "https://open.kattis.com/problems/cliffwalk"
+    },
+    {
+      "task_id": "3613",
+      "url": "https://open.kattis.com/problems/kindergarten"
+    },
+    {
+      "task_id": "3614",
+      "url": "https://open.kattis.com/problems/skakavac"
+    },
+    {
+      "task_id": "3615",
+      "url": "https://open.kattis.com/problems/coverage"
+    },
+    {
+      "task_id": "3616",
+      "url": "https://open.kattis.com/problems/allergy"
+    },
+    {
+      "task_id": "3617",
+      "url": "https://open.kattis.com/problems/pikemanhard"
+    },
+    {
+      "task_id": "3618",
+      "url": "https://open.kattis.com/problems/hunterxcommunication"
+    },
+    {
+      "task_id": "3619",
+      "url": "https://open.kattis.com/problems/programmingteam"
+    },
+    {
+      "task_id": "3620",
+      "url": "https://open.kattis.com/problems/kcolouring"
+    },
+    {
+      "task_id": "3621",
+      "url": "https://open.kattis.com/problems/maxcolorclique"
+    },
+    {
+      "task_id": "3622",
+      "url": "https://open.kattis.com/problems/pachinko"
+    },
+    {
+      "task_id": "3623",
+      "url": "https://open.kattis.com/problems/faultysprinklers"
+    },
+    {
+      "task_id": "3624",
+      "url": "https://open.kattis.com/problems/backpackbuddies"
+    },
+    {
+      "task_id": "3625",
+      "url": "https://open.kattis.com/problems/jackthelumberjack"
+    },
+    {
+      "task_id": "3626",
+      "url": "https://open.kattis.com/problems/intersectingrectangles"
+    },
+    {
+      "task_id": "3627",
+      "url": "https://open.kattis.com/problems/rockclimbing"
+    },
+    {
+      "task_id": "3628",
+      "url": "https://open.kattis.com/problems/additiongame"
+    },
+    {
+      "task_id": "3629",
+      "url": "https://open.kattis.com/problems/crazedboar"
+    },
+    {
+      "task_id": "3630",
+      "url": "https://open.kattis.com/problems/wordspin"
+    },
+    {
+      "task_id": "3631",
+      "url": "https://open.kattis.com/problems/beacons"
+    },
+    {
+      "task_id": "3632",
+      "url": "https://open.kattis.com/problems/prefixfreecode"
+    },
+    {
+      "task_id": "3633",
+      "url": "https://open.kattis.com/problems/filmcritics"
+    },
+    {
+      "task_id": "3634",
+      "url": "https://open.kattis.com/problems/fallingsnow"
+    },
+    {
+      "task_id": "3635",
+      "url": "https://open.kattis.com/problems/mububa"
+    },
+    {
+      "task_id": "3636",
+      "url": "https://open.kattis.com/problems/gridguardian"
+    },
+    {
+      "task_id": "3637",
+      "url": "https://open.kattis.com/problems/pizzaproblems"
+    },
+    {
+      "task_id": "3638",
+      "url": "https://open.kattis.com/problems/tarotshamboast"
+    },
+    {
+      "task_id": "3639",
+      "url": "https://open.kattis.com/problems/rainfall"
+    },
+    {
+      "task_id": "3640",
+      "url": "https://open.kattis.com/problems/meowfactor2"
+    },
+    {
+      "task_id": "3641",
+      "url": "https://open.kattis.com/problems/cuttingthenecklace"
+    },
+    {
+      "task_id": "3642",
+      "url": "https://open.kattis.com/problems/mag"
+    },
+    {
+      "task_id": "3643",
+      "url": "https://open.kattis.com/problems/newsalaries"
+    },
+    {
+      "task_id": "3644",
+      "url": "https://open.kattis.com/problems/hiringfiring"
+    },
+    {
+      "task_id": "3645",
+      "url": "https://open.kattis.com/problems/guessingcircle"
+    },
+    {
+      "task_id": "3646",
+      "url": "https://open.kattis.com/problems/jumpingyoshi"
+    },
+    {
+      "task_id": "3647",
+      "url": "https://open.kattis.com/problems/pokemon"
+    },
+    {
+      "task_id": "3648",
+      "url": "https://open.kattis.com/problems/landline"
+    },
+    {
+      "task_id": "3649",
+      "url": "https://open.kattis.com/problems/jumbledstring"
+    },
+    {
+      "task_id": "3650",
+      "url": "https://open.kattis.com/problems/slidingblocks"
+    },
+    {
+      "task_id": "3651",
+      "url": "https://open.kattis.com/problems/rebelportals"
+    },
+    {
+      "task_id": "3652",
+      "url": "https://open.kattis.com/problems/avogadro"
+    },
+    {
+      "task_id": "3653",
+      "url": "https://open.kattis.com/problems/garden"
+    },
+    {
+      "task_id": "3654",
+      "url": "https://open.kattis.com/problems/blobsofdoom"
+    },
+    {
+      "task_id": "3655",
+      "url": "https://open.kattis.com/problems/matchings"
+    },
+    {
+      "task_id": "3656",
+      "url": "https://open.kattis.com/problems/fixingbugs"
+    },
+    {
+      "task_id": "3657",
+      "url": "https://open.kattis.com/problems/slalom2"
+    },
+    {
+      "task_id": "3658",
+      "url": "https://open.kattis.com/problems/forestevolution"
+    },
+    {
+      "task_id": "3659",
+      "url": "https://open.kattis.com/problems/bookcase"
+    },
+    {
+      "task_id": "3660",
+      "url": "https://open.kattis.com/problems/stickers"
+    },
+    {
+      "task_id": "3661",
+      "url": "https://open.kattis.com/problems/gravamen"
+    },
+    {
+      "task_id": "3662",
+      "url": "https://open.kattis.com/problems/aspenavenue"
+    },
+    {
+      "task_id": "3663",
+      "url": "https://open.kattis.com/problems/conquertheworld"
+    },
+    {
+      "task_id": "3664",
+      "url": "https://open.kattis.com/problems/zamboni"
+    },
+    {
+      "task_id": "3665",
+      "url": "https://open.kattis.com/problems/arranginghat"
+    },
+    {
+      "task_id": "3666",
+      "url": "https://open.kattis.com/problems/sprocketscience"
+    },
+    {
+      "task_id": "3667",
+      "url": "https://open.kattis.com/problems/cleaningpipes"
+    },
+    {
+      "task_id": "3668",
+      "url": "https://open.kattis.com/problems/lunchtimenamerecall"
+    },
+    {
+      "task_id": "3669",
+      "url": "https://open.kattis.com/problems/linije"
+    },
+    {
+      "task_id": "3670",
+      "url": "https://open.kattis.com/problems/granica"
+    },
+    {
+      "task_id": "3671",
+      "url": "https://open.kattis.com/problems/konsultarbeten"
+    },
+    {
+      "task_id": "3672",
+      "url": "https://open.kattis.com/problems/thecolonizationofelgarizm"
+    },
+    {
+      "task_id": "3673",
+      "url": "https://open.kattis.com/problems/dance"
+    },
+    {
+      "task_id": "3674",
+      "url": "https://open.kattis.com/problems/guessthedigits"
+    },
+    {
+      "task_id": "3675",
+      "url": "https://open.kattis.com/problems/longestcommonsubsequence"
+    },
+    {
+      "task_id": "3676",
+      "url": "https://open.kattis.com/problems/chocolates"
+    },
+    {
+      "task_id": "3677",
+      "url": "https://open.kattis.com/problems/politicaldevelopment"
+    },
+    {
+      "task_id": "3678",
+      "url": "https://open.kattis.com/problems/loopingaround"
+    },
+    {
+      "task_id": "3679",
+      "url": "https://open.kattis.com/problems/catmasgifts"
+    },
+    {
+      "task_id": "3680",
+      "url": "https://open.kattis.com/problems/fence2"
+    },
+    {
+      "task_id": "3681",
+      "url": "https://open.kattis.com/problems/krotating"
+    },
+    {
+      "task_id": "3682",
+      "url": "https://open.kattis.com/problems/codetheft"
+    },
+    {
+      "task_id": "3683",
+      "url": "https://open.kattis.com/problems/minigolf"
+    },
+    {
+      "task_id": "3684",
+      "url": "https://open.kattis.com/problems/streaming"
+    },
+    {
+      "task_id": "3685",
+      "url": "https://open.kattis.com/problems/jellyraid"
+    },
+    {
+      "task_id": "3686",
+      "url": "https://open.kattis.com/problems/targetpractice"
+    },
+    {
+      "task_id": "3687",
+      "url": "https://open.kattis.com/problems/jupiter"
+    },
+    {
+      "task_id": "3688",
+      "url": "https://open.kattis.com/problems/manhattanshopping"
+    },
+    {
+      "task_id": "3739",
+      "url": "https://open.kattis.com/problems/youbethejudge"
+    },
+    {
+      "task_id": "3812",
+      "url": "https://codeforces.com/problemset/problem/1012/D"
+    },
+    {
+      "task_id": "3884",
+      "url": "https://codeforces.com/problemset/problem/1010/A"
+    },
+    {
+      "task_id": "3968",
+      "url": "https://open.kattis.com/problems/contacttracing"
+    }
+  ]
+}

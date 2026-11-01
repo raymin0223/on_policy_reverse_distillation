@@ -1,0 +1,10 @@
+defaults:
+- ref
+- ../engine@fsdp_config: fsdp
+- _self_
+_target_: verl.workers.config.FSDPActorConfig
+fsdp_config:
+  forward_only: true
+ulysses_sequence_parallel_size: ${oc.select:actor_rollout_ref.actor.ulysses_sequence_parallel_size,1}
+entropy_from_logits_with_chunking: false
+entropy_checkpointing: false

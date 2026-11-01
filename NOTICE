@@ -1,0 +1,24 @@
+On-Policy Reverse Distillation
+Copyright 2026 the OPRD authors.
+
+The paper figures in assets/ are from arXiv:2609.08798v2 by the OPRD
+authors, published under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+Figure 1 is a cropped rendering of page 1; the method figure is rendered
+from the manuscript's original figure PDF. See https://arxiv.org/abs/2609.08798v2.
+
+This distribution contains modified verl training infrastructure. Original
+copyright and Apache-2.0 notices are retained in the source files. See
+https://github.com/volcengine/verl for the upstream project.
+
+The ViLaSR prompt templates and visual drawing protocol are adapted from
+AntResearchNLP/ViLaSR (Apache-2.0), revision
+61669c02dbfadff57375c78fb3f7454ea81bb47a. Dataset and checkpoint revisions are
+recorded in oprd/agent/vilasr_assets.lock.json.
+
+Reasoning task generators and verifiers are adapted from Reasoning Gym
+and the private development version of this project. Third-party model
+weights and datasets are downloaded separately and retain their respective
+licenses. EvalPlus is installed separately from its pinned upstream revision.
+
+The files in this release have been modified to provide the OPRD paper's
+training, evaluation, and data-preparation interface.
