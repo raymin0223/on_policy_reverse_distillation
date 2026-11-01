@@ -1138,9 +1138,18 @@ class RayPPOTrainer:
                 test_batch.non_tensor_batch["uid"] = np.array(
                     [str(uuid.uuid4()) for _ in range(len(test_batch.batch))], dtype=object
                 )
-            test_batch = test_batch.repeat(
-                repeat_times=self.config.actor_rollout_ref.rollout.val_kwargs.n, interleave=True
-            )
+            samples_per_question = self.config.actor_rollout_ref.rollout.val_kwargs.n
+            test_batch = test_batch.repeat(repeat_times=samples_per_question, interleave=True)
+            if "extra_info" in test_batch.non_tensor_batch:
+                # Assign trajectory indices before padding or worker sharding.
+                # Repeated rows share their original dict, so copy each one.
+                test_batch.non_tensor_batch["extra_info"] = np.array(
+                    [
+                        dict(info, eval_sample_index=i % samples_per_question)
+                        for i, info in enumerate(test_batch.non_tensor_batch["extra_info"])
+                    ],
+                    dtype=object,
+                )
             if (
                 self.config.reward_model.enable
                 and test_batch[0].non_tensor_batch["reward_model"]["style"] == "model"
@@ -2767,7 +2776,8 @@ class RayPPOTrainer:
                     f"Checkpoint payload marker exists, but its final root-tracker commit is missing: checkpoint_step={global_step}, tracker_step={tracker_step}"
                 )
         data_path = os.path.join(global_step_folder, "data.pt")
-        dataloader_required = transaction_marked or None
+        # Synchronous saves also need the sampler/cursor for an exact training resume.
+        dataloader_required = transaction_marked or not self.config.trainer.get("val_only", False)
         if not os.path.isfile(data_path):
             if dataloader_required:
                 raise FileNotFoundError(
@@ -2775,9 +2785,12 @@ class RayPPOTrainer:
                 )
             return None
         try:
-            return torch.load(data_path, map_location="cpu", weights_only=False)
+            state_dict = torch.load(data_path, map_location="cpu", weights_only=False)
         except BaseException as exc:
             raise RuntimeError(f"Failed to preload checkpoint dataloader state: {data_path}") from exc
+        if not isinstance(state_dict, dict):
+            raise RuntimeError(f"Checkpoint dataloader state must be a state dictionary: {data_path}")
+        return state_dict
 
     def _load_checkpoint(self):
         self._loaded_checkpoint_step = None
@@ -2825,7 +2838,7 @@ class RayPPOTrainer:
         if dataloader_state_dict is not None:
             self.train_dataloader.load_state_dict(dataloader_state_dict)
         else:
-            print(f"Warning: No dataloader state found at {dataloader_local_path}, will start from scratch")
+            print(f"Evaluation-only checkpoint load: no dataloader state at {dataloader_local_path}")
         self._loaded_checkpoint_step = int(self.global_steps)
 
     def _start_profiling(self, do_profile: bool) -> None:
@@ -3092,6 +3105,18 @@ class RayPPOTrainer:
             config=OmegaConf.to_container(self.config, resolve=True),
             group_name=self.config.trainer.get("group_name", None),
         )
+        try:
+            self._fit(logger)
+        except BaseException as training_error:
+            try:
+                logger.finish(exit_code=1)
+            except Exception as tracking_error:
+                training_error.add_note(f"Tracking shutdown also failed: {tracking_error!r}")
+            raise
+        else:
+            logger.finish()
+
+    def _fit(self, logger):
         self.global_steps = 0
         self._load_checkpoint()
         if self.global_steps >= self.total_training_steps and not self.config.trainer.get("val_only", False):
@@ -3101,7 +3126,6 @@ class RayPPOTrainer:
                 f"Training already complete: checkpoint step {self.global_steps} "
                 f">= requested horizon {self.total_training_steps}"
             )
-            logger.finish()
             return
         self._init_validation_schedule()
         current_epoch = self.global_steps // len(self.train_dataloader)
@@ -3138,7 +3162,6 @@ class RayPPOTrainer:
                 logger.log(data=init_metrics, step=self.global_steps, wandb_commit=True)
                 if self.config.trainer.get("val_only", False):
                     None
-                    logger.finish()
                     return
         if self.config.actor_rollout_ref.rollout.get("skip_rollout", False):
             rollout_skip = RolloutSkip(self.config, self.actor_rollout_wg)
@@ -3494,13 +3517,11 @@ class RayPPOTrainer:
                     if last_val_metrics is not None:
                         self._print_validation_metrics(last_val_metrics, label="Final validation")
                     progress_bar.close()
-                    logger.finish()
                     return
                 if hasattr(self.train_dataset, "on_batch_end"):
                     self.train_dataset.on_batch_end(batch=batch)
         self._log_completed_async_validations(logger, blocking=True)
         None
-        logger.finish()
 
     def _get_hourly_validation_freq_seconds(self) -> float:
         return 0.0

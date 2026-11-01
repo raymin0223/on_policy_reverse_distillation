@@ -29,7 +29,9 @@ class ViLaSRAgentLoop(AgentLoopBase):
             raise ValueError("Prompt exceeds audited limit")
         ids, running_images = list(prompt), list(images)
         draw_session = DrawingSession(running_images)
-        mask, logprobs, segments, interactions = [], [], [], []
+        mask, segments, interactions = [], [], []
+        # Missing rollout probabilities must stay absent, not become log(p)=0.
+        logprobs = [] if sampling_params.get("logprobs", False) else None
         metrics, stop, request = {}, "", uuid4().hex
         max_turns = limits.val_max_tool_turns if validate else limits.train_max_tool_turns
         per_turn = limits.val_max_action_length if validate else limits.train_max_action_length
@@ -59,7 +61,12 @@ class ViLaSRAgentLoop(AgentLoopBase):
             text = self.tokenizer.decode(generated, skip_special_tokens=False)
             ids.extend(generated)
             mask.extend([1] * len(generated))
-            logprobs.extend(output.log_probs or [0.0] * len(generated))
+            if logprobs is not None:
+                if output.log_probs is None or len(output.log_probs) != len(generated):
+                    raise ValueError(
+                        f"ViLaSR turn {turn}: requested rollout log probabilities must cover every generated token"
+                    )
+                logprobs.extend(output.log_probs)
             segments.append(text)
             if len(generated) >= params["max_tokens"]:
                 stop = "action_length_limit" if per_turn < available else "response_budget"
@@ -111,7 +118,8 @@ class ViLaSRAgentLoop(AgentLoopBase):
                 break
             ids.extend(obs_ids)
             mask.extend([0] * len(obs_ids))
-            logprobs.extend([0.0] * len(obs_ids))
+            if logprobs is not None:
+                logprobs.extend([0.0] * len(obs_ids))
         extra = {"model_segments": segments, "tool_interact_info": interactions, "traj_stop_reason": stop}
         return AgentLoopOutput(
             prompt_ids=prompt,

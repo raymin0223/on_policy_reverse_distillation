@@ -1341,6 +1341,15 @@ class DataParallelPPOActor(BasePPOActor):
         beta = self._compute_kdrl_beta(data.meta_info) if kdrl else 0.0
         direct = bool(cfg.get("delta_target_enabled", False))
         w2s = bool(cfg.get("w2s_opd_enabled", False))
+        method_loss_key = (
+            "distillation/direct_opd_topk_dense_pg_loss"
+            if direct
+            else "distillation/w2s_opd_reverse_kl_loss"
+            if w2s
+            else None
+        )
+        if method_loss_key is not None:
+            metrics[method_loss_key] = 0.0
         oprd = bool(cfg.get("oprd_enabled", False))
         for _ in range(self.config.ppo_epochs):
             for mini in data.split(self.config.ppo_mini_batch_size):
@@ -1516,6 +1525,10 @@ class DataParallelPPOActor(BasePPOActor):
                             stats.update(kd_stats)
                         if kdrl:
                             stats["distillation/kdrl_beta"] = beta
+                    if method_loss_key is not None:
+                        # Globally normalized microbatch contributions must be
+                        # summed, just like actor/pg_loss and KDRL components.
+                        metrics[method_loss_key] += stats.pop(method_loss_key)
                     if self.config.use_kl_loss:
                         penalty = kl_penalty(
                             logprob=logp,
@@ -1551,6 +1564,8 @@ class DataParallelPPOActor(BasePPOActor):
             self._update_teacher()
         for key in ("actor/pg_loss", "actor/kl_loss"):
             metrics[key] /= max(optimizer_steps, 1)
+        if method_loss_key is not None:
+            metrics[method_loss_key] /= max(optimizer_steps, 1)
         metrics.update(token_metrics.finish())
         if kdrl:
             metrics["distillation/kdrl_grpo_loss"] /= max(optimizer_steps, 1)

@@ -410,34 +410,39 @@ class Tracking:
                 logger_instance.define_metric(metric_name, **kwargs)
                 self._defined_metrics.add(cache_key)
 
-    def finish(self):
+    def finish(self, exit_code: int = 0):
         if self._finished:
             return
         self._finished = True
         # Normal trainer shutdown releases every validation barrier first. This
         # fallback prevents unrelated training metrics from being lost if a run
         # exits early while an async validation result is still unavailable.
-        self._wandb_step_barriers.clear()
-        self._flush_wandb_deferred_logs(force=True)
-
-        if "wandb" in self.logger:
-            self.logger["wandb"].finish(exit_code=0)
-        if "swanlab" in self.logger:
-            self.logger["swanlab"].finish()
-        if "vemlp_wandb" in self.logger:
-            self.logger["vemlp_wandb"].finish(exit_code=0)
-        if "tensorboard" in self.logger:
-            self.logger["tensorboard"].finish()
-        if "clearml" in self.logger:
-            self.logger["clearml"].finish()
-        if "trackio" in self.logger:
-            self.logger["trackio"].finish()
-        if "file" in self.logger:
-            self.logger["file"].finish()
+        try:
+            self._wandb_step_barriers.clear()
+            self._flush_wandb_deferred_logs(force=True)
+        except BaseException:
+            exit_code = exit_code or 1
+            raise
+        finally:
+            if "wandb" in self.logger:
+                self.logger["wandb"].finish(exit_code=exit_code)
+            if "swanlab" in self.logger:
+                self.logger["swanlab"].finish()
+            if "vemlp_wandb" in self.logger:
+                self.logger["vemlp_wandb"].finish(exit_code=exit_code)
+            if "tensorboard" in self.logger:
+                self.logger["tensorboard"].finish()
+            if "clearml" in self.logger:
+                self.logger["clearml"].finish()
+            if "trackio" in self.logger:
+                self.logger["trackio"].finish()
+            if "file" in self.logger:
+                self.logger["file"].finish()
 
     def __del__(self):
         try:
-            self.finish()
+            # Only an explicit finish() confirms successful completion.
+            self.finish(exit_code=1)
         except Exception:
             # Best-effort cleanup during interpreter teardown.
             pass
